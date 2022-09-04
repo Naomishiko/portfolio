@@ -1,6 +1,7 @@
 import React from "react";
 import naomishiko from "../assets/naomishiko.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -17,23 +18,21 @@ const Home = () => {
             I'm a full Stack Developer
             </h2>
              <p className="text-gray-500 py-4 max-w-md">
-        Passionate full-stack developer who is driven, 
-        energetic, and creative. My undeniable perseverance, 
-        commitment and focus to whatever I set my mind to has always been one of 
-        my defining characteristics. My background in the cosmetic industry, and 
-        healthcare gave me a strong work ethic, leadership, team collaboration, 
-        customer-focused and product management.
+        Passionate software engineer who is driven, 
+        energetic, and creative with the ability to build a web presence from the ground
         </p>
 
         <div>
-            <button className="group text-white w-fit px-6
+            <Link to="portfolio" 
+            smooth duration={500}
+            className="group text-white w-fit px-6
             py-3 my-2 flex items-center rounded-md bg-gradient-to-r
             from-cyan-500 to-blue-500 cursor-pointer">
                 Portfolio
                 <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
                 </span>
-            </button>
+            </Link>
      </div>
    </div>
 
