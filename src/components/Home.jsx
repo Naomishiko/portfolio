@@ -17,7 +17,7 @@ const Home = () => {
         text-white">
             I'm a full Stack Developer
             </h2>
-             <p className="text-gray-500 py-4 max-w-md">
+             <p className="text-gray-300 py-4 max-w-md">
         Passionate software engineer who is driven, 
         energetic, and creative with the ability to build a web presence from the ground.
         </p>
