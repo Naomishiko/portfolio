@@ -7,7 +7,7 @@ const Home = () => {
   return (
      <div 
      name="home" 
-     className="h-screen w-full bg-gradient-to-b from-black
+     className="h-screen w-full bg-gradient-to-t from-black
      via-black to-pink-900"
      >
     <div className="max-w-screen-md mx-auto flex 
@@ -19,7 +19,7 @@ const Home = () => {
             </h2>
              <p className="text-gray-500 py-4 max-w-md">
         Passionate software engineer who is driven, 
-        energetic, and creative with the ability to build a web presence from the ground
+        energetic, and creative with the ability to build a web presence from the ground.
         </p>
 
         <div>
@@ -27,7 +27,7 @@ const Home = () => {
             smooth duration={500}
             className="group text-white w-fit px-6
             py-3 my-2 flex items-center rounded-md bg-gradient-to-r
-            from-cyan-500 to-blue-500 cursor-pointer">
+            from-blue-500 to-pink-500 cursor-pointer">
                 Portfolio
                 <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
