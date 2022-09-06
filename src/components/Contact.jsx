@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div name="contact" className="w-full
-    bg-gradient-to-b to-pink-600 from-black via-black p-4 text-white">
+    bg-gradient-to-b to-pink-600 from-black via-black p-4 text-white md:h-auto md:flex-1">
         <div className="flex flex-col p-4 justify-center
         max-w-screen-lg mx-auto h-full">
             <div className="pb-8">
@@ -43,7 +43,7 @@ const Contact = () => {
 
                   <button className="text-white bold bg-gradient-to-t
                    from to-black-300 to-orange-900 px-10 py-7 my-8 mx-auto flex 
-                   items-center rounded-md hover:scale-110 duration-300">
+                   items-center rounded-md hover:scale-110 duration-300 shadow-md shadow-blue-200">
                       Let's talk
                   </button>
                 </form>
