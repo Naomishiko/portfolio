@@ -35,7 +35,7 @@ const Portfolio = () => {
          <div className="p-4 mx-auto flex flex-col
          justify-center w-full h-full">
              <div className="pb-8">
-                 <p className="text-4xl font-bold inline border-b-1 border-gray-700 shadow-md shadow-blue-200 px-5"> 
+                 <p className="text-4xl font-bold inline border-b-1 border-gray-700 shadow-md shadow-yellow-600 px-5"> 
                  Portfolio</p>
                  <p className="py-6">Check out some of my work right here</p>
              </div>

@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="flex flex-col p-4 justify-center
         max-w-screen-lg mx-auto h-full">
             <div className="pb-8">
-                    <p className="text-4xl font-bold inline border-b-1 border-gray-700 shadow-md shadow-blue-200 px-5">
+                    <p className="text-4xl font-bold inline border-b-1 border-gray-700 shadow-md shadow-yellow-600 px-5">
                         Contact
                         </p>
 
@@ -43,7 +43,7 @@ const Contact = () => {
 
                   <button className="text-white bold bg-gradient-to-t
                    from to-black-300 to-orange-900 px-10 py-7 my-8 mx-auto flex 
-                   items-center rounded-md hover:scale-110 duration-300 shadow-md shadow-blue-200">
+                   items-center rounded-md hover:scale-110 duration-300 shadow-md shadow-yellow-500">
                       Let's talk
                   </button>
                 </form>
