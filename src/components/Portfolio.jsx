@@ -30,7 +30,7 @@ const Portfolio = () => {
 ]
 
   return (
-    <div name="portfolio" className="bg-gradient-to-b from-pink-900 to-red-900 via-black w-full
+    <div name="portfolio" className="bg-gradient-to-t from-red-900 to-pink-900 via-black w-full
      text-white md:h-screen">
          <div className="p-4 mx-auto flex flex-col
          justify-center w-full h-full">
@@ -44,7 +44,7 @@ const Portfolio = () => {
              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
              {
                  portfolios.map(({id, src}) => (
-                    <div key={id}className="shadow-md shadow-yellow-700 rounded-lg">
+                    <div key={id}className="shadow-md shadow-pink-400 rounded-lg">
                     <img 
                     src={src}
                      alt="" 
