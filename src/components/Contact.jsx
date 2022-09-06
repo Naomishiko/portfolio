@@ -44,7 +44,7 @@ const Contact = () => {
                   <button className="text-white bold bg-gradient-to-t
                    from to-black-300 to-orange-900 px-10 py-7 my-8 mx-auto flex 
                    items-center rounded-md hover:scale-110 duration-300 shadow-md shadow-yellow-500">
-                      Let's talk
+                      Get In Touch
                   </button>
                 </form>
             </div>

@@ -18,7 +18,7 @@ const Home = () => {
             </h2>
              <p className="text-gray-300 py-4 max-w-md">
         Passionate software engineer who is driven, 
-        energetic, and creative with the ability to build a web presence from the ground.
+        energetic, and creative. I build websites with a focus on responsiveness, accessibility and pleasing aesthetics.
         </p>
 
         <div>
