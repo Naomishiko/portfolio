@@ -10,7 +10,7 @@ const Portfolio = () => {
         {
         id: 1,
         src: lebronjamesTrivia,
-        url: "https:github.com/naomishiko",
+        url: "https://taupe-treacle-a736a0.netlify.app/",
         
     },
 
@@ -25,7 +25,7 @@ const Portfolio = () => {
     {
         id: 3,
         src: groupPortfolio,
-        url: "https:twitter.com"
+        url: "https://pro-folio-njt.netlify.app/"
     },
 
 
