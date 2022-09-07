@@ -17,8 +17,10 @@ const About = () => {
             <br />
             <p className="text-xl"> I completed a Software Engineering Immersive certificate from General Assembly,
              and have experience building full stack applications utilizing tools such as HTML/CSS, 
-            Javascript, Python, React, MongoDB, Node.js, Express.js, Django, PostgreSQL.
+            Javascript, Python, React, MongoDB, Node.js, Express.js, Django, PostgreSQL, and BootStrap.
             </p>
+            <p className="text-xl mt-20">When I'm not coding or working, you can find me at the gym working out, reading, journaling,
+            decorating or listening to music. </p>
         </div>
     </div>
   )

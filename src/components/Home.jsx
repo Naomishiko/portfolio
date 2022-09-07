@@ -24,9 +24,9 @@ const Home = () => {
         <div>
             <Link to="portfolio" 
             smooth duration={500}
-            className="group text-white w-fit px-6
+            className="group text-black font-bold w-fit px-6
             py-3 my-2 flex items-center rounded-md bg-gradient-to-r
-            from-blue-700 to-red-700 cursor-pointer shadow-md shadow-yellow-500">
+            from-red-100 to-yellow-900 cursor-pointer shadow-md shadow-green-400">
                 Portfolio
                 <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />

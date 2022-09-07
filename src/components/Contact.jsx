@@ -42,8 +42,8 @@ const Contact = () => {
                   </textarea>
 
                   <button className="text-white bold bg-gradient-to-t
-                   from to-black-300 to-orange-900 px-10 py-7 my-8 mx-auto flex 
-                   items-center rounded-md hover:scale-110 duration-300 shadow-md shadow-yellow-500">
+                   from-green-500 to-yellow-400 via-black px-10 py-7 my-8 mx-auto flex 
+                   items-center rounded-md hover:scale-110 duration-300 shadow-md shadow-black-900">
                       Get In Touch
                   </button>
                 </form>
