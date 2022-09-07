@@ -2,27 +2,30 @@ import React from 'react'
 import lebronjamesTrivia from "../assets/portfolio/lebronjamesTrivia.jpg";
 import njivoshiMERN from "../assets/portfolio/njivoshiMERN.jpg";
 import groupPortfolio from "../assets/portfolio/groupPortfolio.jpg";
-// import reactParallax from "../assets/portfolio/reactParallax.jpg";
-// import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-// import reactWeather from "../assets/portfolio/reactWeather.jpg";
+
 
 const Portfolio = () => {
 
     const portfolios = [
         {
         id: 1,
-        src: lebronjamesTrivia
+        src: lebronjamesTrivia,
+        url: "https:github.com/naomishiko",
+        
     },
 
     {
         id: 2,
-        src: njivoshiMERN
+        src: njivoshiMERN,
+        url: "https:google.com"
+
     },
 
 
     {
         id: 3,
-        src: groupPortfolio
+        src: groupPortfolio,
+        url: "https:twitter.com"
     },
 
 
@@ -43,20 +46,23 @@ const Portfolio = () => {
     
              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
              {
-                 portfolios.map(({id, src}) => (
-                    <div key={id}className="shadow-md shadow-pink-800 rounded-lg">
-                    <img 
+                 portfolios.map(({id, src, url}) => (
+                    <div key={id}className="shadow-md shadow-pink-700 rounded-lg">
+                     <a href={url}>
+                     <img 
                     src={src}
-                     alt="" 
+                     alt="https://github.com/naomishiko"
+                     
                     className="rounded-md duration-200 hover:scale-105" />
                     <div className="flex items-center justify-center">
-                        
                         <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                             </button>
                         <button  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                             </button>
                     </div>
+                    </a>
                     </div>
+                
                  ))
              }    
              </div>
