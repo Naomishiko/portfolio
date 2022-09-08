@@ -7,8 +7,8 @@ const About = () => {
             <div className="pb-8">
                 <p className="text-4xl font-bold inline border-b-1 border-gray-700 shadow-md shadow-yellow-600 px-5">About</p>
             </div>
-            <p className="text-xl mt-20"> Hello! my name is Naomi, 
-             am a proud Kenyan-American full-stack software engineer. My undeniable perseverance, 
+            <p className="text-xl mt-20"> Hello! my name is Naomi. 
+             I am a proud Kenyan-American full-stack software engineer. My undeniable perseverance, 
         commitment and focus to whatever I set my mind to has always been one of 
         my defining characteristics. My background in the cosmetic industry, and 
         healthcare gave me a strong work ethic, leadership, team collaboration, 
