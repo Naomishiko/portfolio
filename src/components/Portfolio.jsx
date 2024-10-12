@@ -1,6 +1,6 @@
 import React from 'react'
 import lebronjamesTrivia from "../assets/portfolio/lebronjamesTrivia.jpg";
-// import njivoshiMERN from "../assets/portfolio/njivoshiMERN.jpg";
+import tictac from "../assets/portfolio/tictac.jpg";
 import groupPortfolio from "../assets/portfolio/groupPortfolio.jpg";
 
 
@@ -14,12 +14,12 @@ const Portfolio = () => {
         
     },
 
-    // {
-    //     id: 2,
-    //     src: njivoshiMERN,
-    //     url: "https:google.com"
+    {
+        id: 2,
+        src: tictac,
+        url: "https://spontaneous-brioche-3a4022.netlify.app/"
 
-    // },
+    },
 
 
     {
