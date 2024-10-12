@@ -1,6 +1,6 @@
 import React from 'react'
 import lebronjamesTrivia from "../assets/portfolio/lebronjamesTrivia.jpg";
-import njivoshiMERN from "../assets/portfolio/njivoshiMERN.jpg";
+// import njivoshiMERN from "../assets/portfolio/njivoshiMERN.jpg";
 import groupPortfolio from "../assets/portfolio/groupPortfolio.jpg";
 
 
@@ -14,12 +14,12 @@ const Portfolio = () => {
         
     },
 
-    {
-        id: 2,
-        src: njivoshiMERN,
-        url: "https:google.com"
+    // {
+    //     id: 2,
+    //     src: njivoshiMERN,
+    //     url: "https:google.com"
 
-    },
+    // },
 
 
     {
