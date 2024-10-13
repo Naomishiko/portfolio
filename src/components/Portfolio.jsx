@@ -51,7 +51,6 @@ const Portfolio = () => {
                      <a href={url}>
                      <img 
                     src={src}
-                    url={url}
                      alt="https://github.com/naomishiko"
                      
                     className="rounded-md duration-200 hover:scale-105" />
