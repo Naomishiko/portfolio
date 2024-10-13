@@ -1,6 +1,6 @@
 import React from 'react'
 import lebronjamesTrivia from "../assets/portfolio/lebronjamesTrivia.jpg";
-import tictac from "../assets/portfolio/tictac.jpg";
+import tictac from "../assets/portfolio/tictac";
 import groupPortfolio from "../assets/portfolio/groupPortfolio.jpg";
 
 
