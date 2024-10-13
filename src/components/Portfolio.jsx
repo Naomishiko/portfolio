@@ -23,7 +23,7 @@ const Portfolio = () => {
 
 
     {
-        id: 3,
+        id: 2,
         src: groupPortfolio,
         url: "https://pro-folio-njt.netlify.app/",
     },
