@@ -1,7 +1,7 @@
 import React from 'react'
-import lebronjamesTrivia from "../assets/portfolio/lebronjamesTrivia.jpg";
-import tictac from "../assets/portfolio/tictac.jpg";
-import groupPortfolio from "../assets/portfolio/groupPortfolio.jpg";
+import lebronjamesTrivia from "../assets/portfolio/lebronjamesTrivia.jpg"
+import tictac from "../assets/portfolio/tictac.jpg"
+import groupPortfolio from "../assets/portfolio/groupPortfolio.jpg"
 
 
 const Portfolio = () => {
