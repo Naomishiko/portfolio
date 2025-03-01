@@ -15,9 +15,9 @@ const About = () => {
         customer-focused and product management.     
             </p>
             <br />
-            <p className="text-xl"> I completed a Software Engineering Immersive certificate from General Assembly,
-             and have experience building full stack applications utilizing tools such as HTML/CSS, 
-            Javascript, Python, React, MongoDB, Node.js, Express.js, Django, PostgreSQL, and BootStrap.
+            <p className="text-xl"> My background in the cosmetic industry, and 
+        healthcare gave me a strong work ethic, leadership, team collaboration, 
+        customer-focused and product management.
             </p>
             <p className="text-xl mt-20">When I'm not coding or working, you can find me at the gym working out, reading, journaling,
             decorating or listening to music. </p>
