@@ -6,11 +6,8 @@ import reactImage from "../assets/react.png";
 import javascript from "../assets/javascript.png";
 import mongoDB from "../assets/mongoDB.png";
 import node from "../assets/node.png";
-import pythonLogo from "../assets/pythonLogo.png";
-import jQuery from "../assets/jQuery.png";
-import tailwind from "../assets/tailwind.png";
-import heroku from "../assets/heroku.png";
-import postman from "../assets/postman.png";
+import vscode from "../assets/pythonLogo.png";
+
 
 
 const Experience = () => {
@@ -44,12 +41,6 @@ const Experience = () => {
             style: 'shadow-yellow-500'
         },
 
-        {
-            id: 10,
-            src: pythonLogo,
-            title: 'Python',
-            style: 'shadow-yellow-500'
-        },
 
         {
             id: 5,
@@ -58,50 +49,28 @@ const Experience = () => {
             style: 'shadow-blue-600'
         },
 
+
         {
             id: 6,
-            src: tailwind,
-            title: 'Tailwind',
-            style: 'shadow-sky-500'
-        },
-
-        {
-            id: 7,
-            src: jQuery,
-            title: 'jQuery',
-            style: 'shadow-blue-500'
-        },
-
-        {
-            id: 8,
             src: mongoDB,
             title: 'mongoDB',
             style: 'shadow-green-500'
         },
 
+
         {
-            id: 9,
+            id: 7,
             src: node,
             title: 'NODE',
             style: 'shadow-green-500'
         },
 
 
-
-        {
-            id: 10,
-            src: heroku,
-            title: 'Heroku',
-            style: 'shadow-purple-500'
+        {   id: 8,
+            src: vscode,
+            title: 'VS Code',
+            style: 'shadow-green-500'
         },
-
-        {
-            id: 10,
-            src: postman,
-            title: 'Postman',
-            style: 'shadow-orange-500'
-        },
-
 
     ]
 
