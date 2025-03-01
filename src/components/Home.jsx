@@ -14,11 +14,10 @@ const Home = () => {
     <div className="flex flex-col justify-center h-full">
         <h2 className="text-4xl sm:text-7xl font-bold
         text-white">
-            I'm a full Stack Developer
+            Hello, I'm Naomi!
             </h2>
              <p className="text-gray-300 py-4 max-w-md">
-        Passionate software engineer who is driven, 
-        energetic, and creative. I build websites with a focus on responsiveness, accessibility and pleasing aesthetics.
+        Design meets creativity.
         </p>
 
         <div>
