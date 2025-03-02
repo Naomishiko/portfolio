@@ -6,7 +6,8 @@ import reactImage from "../assets/react.png";
 import javascript from "../assets/javascript.png";
 import mongoDB from "../assets/mongoDB.png";
 import node from "../assets/node.png";
-import vscode from "../assets/pythonLogo.png";
+import vscode from "../assets/vscode.png";
+import canva from "../assets/canva.png";
 
 
 
@@ -68,7 +69,14 @@ const Experience = () => {
 
         {   id: 8,
             src: vscode,
-            title: 'VS Code',
+            title: 'VSCode',
+            style: 'shadow-green-500'
+        },
+
+
+        {   id: 9,
+            src: canva,
+            title: 'Canva',
             style: 'shadow-green-500'
         },
 
