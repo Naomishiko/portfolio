@@ -1,39 +1,12 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
 const SocialLinks = () => {
 
     const links = [
-        {
-         id: 1,
-         child: (
-             <>
-              LinkedIn <FaLinkedin size={30} />
-             </>
-         ),
-         href:"https://linkedin.com",
-         style: "rounded-tr-md"
-    },
-
-
-
-    {
-    id: 2,
-    child: (
-        <>
-        Github <FaGithub size={30} />
-        </>
-    ),
-    href:"https://github.com/naomishiko",
-    style: "rounded-tr-md"
-},
-
-
-
 
 {
-id: 3,
+id: 1,
 child: (
     <>
      Mail <HiOutlineMail size={30} />
