@@ -2,7 +2,6 @@ import React from "react";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import github from "../assets/github.png";
-import reactImage from "../assets/react.png";
 import javascript from "../assets/javascript.png";
 import mongoDB from "../assets/mongoDB.png";
 import node from "../assets/node.png";
@@ -43,16 +42,9 @@ const Experience = () => {
         },
 
 
+
         {
             id: 5,
-            src: reactImage,
-            title: 'React',
-            style: 'shadow-blue-600'
-        },
-
-
-        {
-            id: 6,
             src: mongoDB,
             title: 'mongoDB',
             style: 'shadow-green-500'
@@ -60,21 +52,21 @@ const Experience = () => {
 
 
         {
-            id: 7,
+            id: 6,
             src: node,
             title: 'NODE',
             style: 'shadow-green-500'
         },
 
 
-        {   id: 8,
+        {   id: 7,
             src: vscode,
             title: 'VSCode',
             style: 'shadow-green-500'
         },
 
 
-        {   id: 9,
+        {   id: 8,
             src: canva,
             title: 'Canva',
             style: 'shadow-green-500'
