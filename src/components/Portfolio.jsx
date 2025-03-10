@@ -42,6 +42,8 @@ return (
                      <img 
                     src={src}
                      alt="https://github.com/naomishiko"
+                     style={{ display: 'block', width:
+                    '100%', height: 'auto' }}
                      
                     className="rounded-md" />
                     <div className="flex items-center justify-center">
