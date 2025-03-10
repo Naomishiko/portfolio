@@ -24,12 +24,7 @@ const NavBar = () => {
         {
         id: 4,
         link: "experience"
-    },
-        {
-        id: 5,
-        link: "contact"
-    },
-
+        }
     ]
 
 
@@ -37,7 +32,7 @@ const NavBar = () => {
     <div className="flex justify-between items-center w-full h-20
        px-4 text-white bg-black fixed">
         <div>
-        <h1 className="text-6xl font-signature ml-2 shadow-md shadow-yellow-600 px-4">Naomi</h1>
+        <h1 className="text-5xl font-signature ml-2 shadow-md shadow-yellow-600 px-4">Naomi</h1>
         </div>
 
         <ul className="hidden md:flex">
