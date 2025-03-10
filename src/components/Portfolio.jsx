@@ -1,29 +1,28 @@
-import React from 'react'
-import lebronjamesTrivia from "../assets/portfolio/lebronjamesTrivia.jpg"
-import tictac from "../assets/portfolio/tictac.jpg"
-
+import React from 'react';
+import lebronjamesTrivia from
+ "../assets/portfolio/lebronjamesTrivia.jpg"; 
+import tictac from 
+"../assets/portfolio/tictac.jpg"; 
 
 const Portfolio = () => {
 
-    const portfolios = [
-        {
-        id: 1,
-        src: lebronjamesTrivia,
-        url: "https://taupe-treacle-a736a0.netlify.app/",
-        
-    },
 
-    {
-        id: 2,
-        src: tictac,
-        url: "https://spontaneous-brioche-3a4022.netlify.app/",
+const portfolios = [ 
+    { 
+    id: 1, 
+    src: lebronjamesTrivia, 
+    url: "https://taupe-treacle-a736a0.netlify.app/", 
+}, 
 
-    },
+{ 
+    id: 2, 
+    src: tictac, 
+    url: "https://spontaneous-brioche-3a4022.netlify.app/", 
+}, 
 
+]; 
 
-]
-
-  return (
+return (
     <div name="portfolio" className="bg-gradient-to-t from-red-900 to-pink-900 via-black w-full
      text-white md:h-screen">
          <div className="p-4 mx-auto flex flex-col
@@ -45,12 +44,12 @@ const Portfolio = () => {
                      alt="https://github.com/naomishiko"
                      
                     className="rounded-md duration-200 hover:scale-105" />
-            
+                    <div className="flex items-center justify-center">
                         <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                             </button>
                         <button  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                             </button>
-                
+                    </div>
                     </a>
                     </div>
                 
