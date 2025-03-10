@@ -25,7 +25,7 @@ const portfolios = [
 { 
     id: 3, 
     src: ugc, 
-    url: "https://www.naomistudio.net/", 
+    url: "https://naomistudio.net/", 
 }, 
 
 ]; 
