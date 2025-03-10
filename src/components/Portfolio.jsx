@@ -43,7 +43,7 @@ return (
                     src={src}
                      alt="https://github.com/naomishiko"
                      
-                    className="rounded-md duration-200 hover:scale-105" />
+                    className="rounded-md" />
                     <div className="flex items-center justify-center">
                         <button className="w-1/2 px-6 py-3 m-4 ">
                             </button>
