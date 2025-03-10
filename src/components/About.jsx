@@ -7,7 +7,7 @@ const About = () => {
             <div className="pb-8">
                 <p className="text-4xl font-bold inline border-b-1 border-gray-700 shadow-md shadow-yellow-600 px-5">About Me</p>
             </div>
-            <p className="text-[32px] mt-20">
+            <p className="text-[28px] mt-20">
             A creative person who loves building websites, designing user experiences, and making graphics. I'm passionate, driven, energetic, and committed
             to delivering high-quality results. Dedicated to delivering aesthetically pleasing solutions.    
             </p>
