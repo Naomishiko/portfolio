@@ -7,7 +7,7 @@ import mongoDB from "../assets/mongoDB.png";
 import node from "../assets/node.png";
 import vscode from "../assets/vscode.png";
 import canva from "../assets/canva.png";
-import react from "../assets/react.png";
+
 
 
 
@@ -70,14 +70,10 @@ const Experience = () => {
         {   id: 8,
             src: canva,
             title: 'Canva',
-            style: 'shadow-beige-500'
+            style: 'shadow-white-500'
         },
 
-        {   id: 9,
-            src: react,
-            title: 'React',
-            style: 'shadow-gold-500'
-        },
+    
     ]
 
 
