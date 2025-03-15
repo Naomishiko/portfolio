@@ -7,6 +7,7 @@ import mongoDB from "../assets/mongoDB.png";
 import node from "../assets/node.png";
 import vscode from "../assets/vscode.png";
 import canva from "../assets/canva.png";
+import react from "../assets/React.png";
 
 
 
@@ -38,7 +39,7 @@ const Experience = () => {
             id: 4,
             src: javascript,
             title: 'JavaScript',
-            style: 'shadow-yellow-500'
+            style: 'shadow-pink-500'
         },
 
 
@@ -47,7 +48,7 @@ const Experience = () => {
             id: 5,
             src: mongoDB,
             title: 'mongoDB',
-            style: 'shadow-green-500'
+            style: 'shadow-orange-500'
         },
 
 
@@ -69,9 +70,14 @@ const Experience = () => {
         {   id: 8,
             src: canva,
             title: 'Canva',
-            style: 'shadow-green-500'
+            style: 'shadow-beige-500'
         },
 
+        {   id: 9,
+            src: react,
+            title: 'React',
+            style: 'shadow-gold-500'
+        },
     ]
 
 
