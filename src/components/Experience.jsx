@@ -7,7 +7,7 @@ import mongoDB from "../assets/mongoDB.png";
 import node from "../assets/node.png";
 import vscode from "../assets/vscode.png";
 import canva from "../assets/canva.png";
-import react from "../assets/React.png";
+import react from "../assets/react.png";
 
 
 
