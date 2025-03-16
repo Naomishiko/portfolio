@@ -70,7 +70,7 @@ const Experience = () => {
         {   id: 8,
             src: canva,
             title: 'Canva',
-            style: 'shadow-gray-500'
+            style: 'shadow-blue-500'
         },
 
     
