@@ -87,6 +87,58 @@
     background-clip: text;
     color: transparent;
   }
+
+  /* Pink glitter glow hugging the heading text */
+  .glitter-title {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    text-shadow:
+      0 0 10px rgba(240, 163, 194, 0.75),
+      0 0 24px rgba(214, 92, 136, 0.5),
+      0 0 44px rgba(214, 92, 136, 0.28);
+  }
+
+  .glitter-title::before {
+    content: "";
+    position: absolute;
+    inset: -0.5em -1.1em;
+    z-index: -1;
+    border-radius: 9999px;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(240, 163, 194, 0.32),
+      rgba(214, 92, 136, 0.16) 45%,
+      transparent 72%
+    );
+    filter: blur(6px);
+  }
+}
+
+.glitter-title-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.glitter-spark {
+  position: absolute;
+  z-index: 2;
+  color: #F7C8DC;
+  pointer-events: none;
+  filter: drop-shadow(0 0 6px rgba(240, 163, 194, 0.9));
+  animation: spark-pop var(--dur, 2.6s) ease-in-out infinite;
+}
+
+@keyframes spark-pop {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.6) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05) rotate(18deg);
+  }
 }
 
 @keyframes glitter-twinkle {

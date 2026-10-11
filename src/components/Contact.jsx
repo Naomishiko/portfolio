@@ -1,5 +1,5 @@
 import React from "react";
-import { BsStars } from "react-icons/bs";
+import GlitterHeading from "./GlitterHeading";
 
 const fieldClass =
   "rounded-lg border border-gold-400/25 bg-espresso/60 p-3 text-beige-50 placeholder-beige-500 transition-colors duration-200 focus:border-gold-400 focus:outline-none";
@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="mx-auto flex max-w-screen-sm flex-col px-6">
         <div className="mb-10 text-center">
           <p className="font-serif text-4xl font-light text-beige-50 sm:text-5xl">
-            <BsStars className="mr-2 inline align-middle text-blush-300" size={22} />Cont<span className="accent-text">act</span><BsStars className="ml-2 inline align-middle text-blush-300" size={22} />
+            <GlitterHeading>Cont<span className="accent-text">act</span></GlitterHeading>
           </p>
           <div className="accent-rule mx-auto mt-4 h-px w-40" />
           <p className="mt-6 font-sans font-light text-beige-300">
