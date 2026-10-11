@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import { BsStars } from "react-icons/bs";
 
 // Pink glitter sparkles + glow wrapped around heading text.
-const GlitterHeading = ({ children, className = "", sparks = 12 }) => {
+const GlitterHeading = ({ children, className = "", sparks = 20 }) => {
   const stars = useMemo(
     () =>
       Array.from({ length: sparks }, (_, i) => {
@@ -10,9 +10,9 @@ const GlitterHeading = ({ children, className = "", sparks = 12 }) => {
         const r1 = seed / 233280;
         const r2 = ((i * 4703 + 7919) % 104729) / 104729;
         return {
-          left: `${(r1 * 104 - 2).toFixed(1)}%`,
-          top: `${(r2 * 120 - 10).toFixed(1)}%`,
-          size: 4 + Math.round(r2 * 9),
+          left: `${(r1 * 108 - 4).toFixed(1)}%`,
+          top: `${(r2 * 124 - 12).toFixed(1)}%`,
+          size: 6 + Math.round(r2 * 12),
           delay: `${(r1 * 3.2).toFixed(2)}s`,
           dur: `${(2 + r2 * 2.4).toFixed(2)}s`,
         };
