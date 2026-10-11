@@ -14,9 +14,6 @@ const Home = () => {
 
       <div className="relative mx-auto flex min-h-screen max-w-screen-lg flex-col items-center justify-center gap-12 px-6 py-28 md:flex-row md:gap-16 md:py-0">
         <div className="flex flex-col justify-center text-center md:text-left">
-          <p className="mb-4 font-sans text-xs uppercase tracking-[0.4em] text-gold-300">
-            Portfolio
-          </p>
           <h2 className="font-serif text-5xl font-light leading-[1.05] text-beige-50 sm:text-6xl md:text-7xl">
             Hello, I&apos;m <span className="text-gold-400">Naomi</span>
           </h2>
