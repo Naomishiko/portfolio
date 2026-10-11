@@ -13,7 +13,7 @@
   }
 
   body {
-    background-color: #1A1512;
+    background-color: #1C0710;
     color: #FAF5EC;
   }
 
@@ -35,13 +35,14 @@
     z-index: -10;
     pointer-events: none;
     background:
-      linear-gradient(180deg, rgba(26, 21, 18, 0.62), rgba(36, 29, 23, 0.72)),
-      radial-gradient(ellipse at 80% 8%, rgba(212, 175, 55, 0.26), transparent 55%),
-      radial-gradient(ellipse at 10% 90%, rgba(226, 128, 156, 0.2), transparent 60%);
+      linear-gradient(180deg, rgba(28, 7, 16, 0.6), rgba(74, 15, 38, 0.72)),
+      radial-gradient(ellipse at 80% 8%, rgba(212, 175, 55, 0.3), transparent 55%),
+      radial-gradient(ellipse at 10% 90%, rgba(214, 92, 136, 0.28), transparent 60%),
+      radial-gradient(ellipse at 50% 50%, rgba(183, 110, 121, 0.14), transparent 65%);
   }
 
   ::selection {
-    background-color: rgba(222, 155, 126, 0.35);
+    background-color: rgba(212, 175, 55, 0.35);
     color: #FDFBF6;
   }
 
@@ -50,41 +51,93 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #1A1512;
+    background: #1C0710;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #834B37;
+    background: #7B3F49;
     border-radius: 9999px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #C97F60;
+    background: #B76E79;
   }
 }
 
 @layer components {
   .gold-rule {
-    background-image: linear-gradient(90deg, transparent, #DE9B7E, transparent);
+    background-image: linear-gradient(90deg, transparent, #D4AF37, transparent);
   }
 
   .gold-glow {
-    background: radial-gradient(ellipse at center, rgba(222, 155, 126, 0.18), transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.22), transparent 70%);
   }
 
   .blush-glow {
-    background: radial-gradient(ellipse at center, rgba(226, 128, 156, 0.22), transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(214, 92, 136, 0.26), transparent 70%);
   }
 
   .accent-rule {
-    background-image: linear-gradient(90deg, transparent, #DE9B7E, #E2809C, transparent);
+    background-image: linear-gradient(90deg, transparent, #D4AF37, #D65C88, transparent);
   }
 
   .accent-text {
-    background-image: linear-gradient(90deg, #E2809C, #DE9B7E);
+    background-image: linear-gradient(90deg, #F0A3C2, #D4AF37, #E67BA3);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+  }
+
+  /* Pink glitter glow hugging the heading text */
+  .glitter-title {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    text-shadow:
+      0 0 12px rgba(240, 163, 194, 0.9),
+      0 0 28px rgba(214, 92, 136, 0.68),
+      0 0 52px rgba(214, 92, 136, 0.42);
+  }
+
+  .glitter-title::before {
+    content: "";
+    position: absolute;
+    inset: -0.6em -1.3em;
+    z-index: -1;
+    border-radius: 9999px;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(240, 163, 194, 0.5),
+      rgba(214, 92, 136, 0.28) 45%,
+      transparent 74%
+    );
+    filter: blur(7px);
+  }
+}
+
+.glitter-title-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.glitter-spark {
+  position: absolute;
+  z-index: 2;
+  color: #F7C8DC;
+  pointer-events: none;
+  filter: drop-shadow(0 0 6px rgba(240, 163, 194, 0.9));
+  animation: spark-pop var(--dur, 2.6s) ease-in-out infinite;
+}
+
+@keyframes spark-pop {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.6) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05) rotate(18deg);
   }
 }
 
@@ -114,9 +167,18 @@
   will-change: opacity, transform;
 }
 
+.glitter-dot.pink {
+  background: radial-gradient(
+    circle,
+    #FFF2F6 0%,
+    #F0A3C2 42%,
+    rgba(214, 92, 136, 0) 72%
+  );
+}
+
 .glitter-haze {
   background:
-    radial-gradient(ellipse at 20% 15%, rgba(235, 183, 159, 0.12), transparent 55%),
-    radial-gradient(ellipse at 85% 70%, rgba(222, 155, 126, 0.1), transparent 55%),
-    radial-gradient(ellipse at 50% 100%, rgba(226, 128, 156, 0.08), transparent 60%);
+    radial-gradient(ellipse at 20% 15%, rgba(233, 200, 104, 0.14), transparent 55%),
+    radial-gradient(ellipse at 85% 70%, rgba(212, 175, 55, 0.12), transparent 55%),
+    radial-gradient(ellipse at 50% 100%, rgba(214, 92, 136, 0.12), transparent 60%);
 }

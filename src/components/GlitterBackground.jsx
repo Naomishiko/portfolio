@@ -14,6 +14,7 @@ const GlitterBackground = ({ count = 85 }) => {
         size: `${(1.5 + rand2 * 3).toFixed(2)}px`,
         dur: `${(2.5 + rand * 4).toFixed(2)}s`,
         delay: `${(rand2 * 5).toFixed(2)}s`,
+        pink: i % 2 === 1,
       });
     }
     return out;
@@ -27,7 +28,7 @@ const GlitterBackground = ({ count = 85 }) => {
       {dots.map((dot) => (
         <span
           key={dot.id}
-          className="glitter-dot"
+          className={`glitter-dot${dot.pink ? " pink" : ""}`}
           style={{
             left: dot.left,
             top: dot.top,
