@@ -1,5 +1,6 @@
 import React from "react";
 import { BsStars } from "react-icons/bs";
+import CodingArt from "./CodingArt";
 import {
   SiCanva,
   SiCss3,
@@ -42,6 +43,10 @@ const Experience = () => {
           <p className="mt-6 font-sans font-light text-beige-300">
             Technologies I have worked with
           </p>
+        </div>
+
+        <div className="mb-14 flex justify-center">
+          <CodingArt className="w-72 max-w-full drop-shadow-[0_18px_40px_rgba(222,155,126,0.35)] sm:w-80 md:w-96" />
         </div>
 
         <div className="grid grid-cols-2 gap-6 text-center sm:grid-cols-3 md:grid-cols-4">
