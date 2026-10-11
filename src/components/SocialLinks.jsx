@@ -20,7 +20,7 @@ const SocialLinks = () => {
         {links.map(({ id, child, href, download }) => (
           <li
             key={id}
-            className="ml-[-100px] flex h-24 w-40 items-center justify-between bg-gradient-to-r from-gold-600 to-gold-400 px-4 duration-300 hover:ml-[-10px] hover:rounded-md"
+            className="ml-[-100px] flex h-24 w-40 items-center justify-between bg-gradient-to-r from-gold-500 to-blush-500 px-4 duration-300 hover:ml-[-10px] hover:rounded-md"
           >
             <a
               href={href}

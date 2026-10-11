@@ -25,7 +25,7 @@ const NavBar = () => {
               to={link}
               smooth
               duration={500}
-              className="cursor-pointer font-sans text-sm font-medium uppercase tracking-[0.2em] text-beige-200 transition-colors duration-200 hover:text-gold-400"
+              className="cursor-pointer font-sans text-sm font-medium uppercase tracking-[0.2em] text-beige-200 transition-colors duration-200 hover:text-blush-400"
             >
               {link}
             </Link>
@@ -52,7 +52,7 @@ const NavBar = () => {
                 to={link}
                 smooth
                 duration={500}
-                className="cursor-pointer font-serif text-3xl capitalize text-beige-100 transition-colors duration-200 hover:text-gold-400 sm:text-4xl"
+                className="cursor-pointer font-serif text-3xl capitalize text-beige-100 transition-colors duration-200 hover:text-blush-400 sm:text-4xl"
               >
                 {link}
               </Link>

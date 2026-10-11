@@ -31,9 +31,9 @@ const Experience = () => {
       <div className="mx-auto flex max-w-screen-lg flex-col px-6">
         <div className="mb-12 text-center md:text-left">
           <p className="font-serif text-4xl font-light text-beige-50 sm:text-5xl md:text-6xl">
-            Exper<span className="text-gold-400">ience</span>
+            Exper<span className="accent-text">ience</span>
           </p>
-          <div className="gold-rule mx-auto mt-4 h-px w-40 md:mx-0" />
+          <div className="accent-rule mx-auto mt-4 h-px w-40 md:mx-0" />
           <p className="mt-6 font-sans font-light text-beige-300">
             Technologies I have worked with
           </p>
@@ -43,12 +43,12 @@ const Experience = () => {
           {techs.map(({ id, Icon, title }) => (
             <div
               key={id}
-              className="group flex flex-col items-center rounded-2xl border border-gold-400/20 bg-beige-50 px-4 py-7 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-gold-400/60 hover:shadow-gold"
+              className="group flex flex-col items-center rounded-2xl border border-gold-400/20 bg-beige-50 px-4 py-7 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-blush-400/60 hover:shadow-blush"
             >
               <Icon
                 size={64}
                 aria-label={title}
-                className="h-16 w-16 text-espresso transition-colors duration-300 group-hover:text-gold-500"
+                className="h-16 w-16 text-espresso transition-colors duration-300 group-hover:text-blush-500"
               />
               <p className="mt-5 font-sans text-sm font-semibold uppercase tracking-widest text-espresso">
                 {title}
