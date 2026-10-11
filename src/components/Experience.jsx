@@ -47,12 +47,12 @@ const Experience = () => {
           {techs.map(({ id, Icon, title }) => (
             <div
               key={id}
-              className="group flex flex-col items-center rounded-2xl border border-gold-400/20 bg-beige-50 px-4 py-7 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-blush-400/60 hover:shadow-blush"
+              className="group flex flex-col items-center rounded-2xl border border-gold-400/20 bg-beige-50 px-4 py-7 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-gold-400/60 hover:shadow-gold"
             >
               <Icon
                 size={64}
                 aria-label={title}
-                className="h-16 w-16 text-espresso transition-colors duration-300 group-hover:text-blush-500"
+                className="h-16 w-16 text-espresso transition-colors duration-300 group-hover:text-gold-500"
               />
               <p className="mt-5 font-sans text-sm font-semibold uppercase tracking-widest text-espresso">
                 {title}

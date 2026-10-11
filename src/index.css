@@ -36,7 +36,7 @@
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #CF5A80;
+    background: #C29A2C;
   }
 }
 
@@ -54,11 +54,11 @@
   }
 
   .accent-rule {
-    background-image: linear-gradient(90deg, transparent, #D4AF37, #E27D9C, transparent);
+    background-image: linear-gradient(90deg, transparent, #D4AF37, #E3C46F, transparent);
   }
 
   .accent-text {
-    background-image: linear-gradient(90deg, #D4AF37, #E27D9C);
+    background-image: linear-gradient(90deg, #E3C46F, #D4AF37);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
