@@ -48,4 +48,19 @@
   .gold-glow {
     background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.16), transparent 70%);
   }
+
+  .blush-glow {
+    background: radial-gradient(ellipse at center, rgba(226, 125, 156, 0.18), transparent 70%);
+  }
+
+  .accent-rule {
+    background-image: linear-gradient(90deg, transparent, #D4AF37, #E27D9C, transparent);
+  }
+
+  .accent-text {
+    background-image: linear-gradient(90deg, #D4AF37, #E27D9C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }

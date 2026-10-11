@@ -9,9 +9,9 @@ const About = () => {
       <div className="mx-auto flex max-w-screen-lg flex-col px-6">
         <div className="mb-10 text-center md:text-left">
           <p className="font-serif text-4xl font-light text-beige-50 sm:text-5xl md:text-6xl">
-            About <span className="text-gold-400">Me</span>
+            About <span className="accent-text">Me</span>
           </p>
-          <div className="gold-rule mx-auto mt-4 h-px w-40 md:mx-0" />
+          <div className="accent-rule mx-auto mt-4 h-px w-40 md:mx-0" />
         </div>
         <p className="mx-auto max-w-3xl text-center font-serif text-xl leading-relaxed text-beige-200 sm:text-2xl md:text-[28px] md:leading-relaxed">
           A creative person who loves building websites, designing user

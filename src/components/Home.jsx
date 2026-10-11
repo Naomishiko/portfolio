@@ -10,7 +10,7 @@ const Home = () => {
       className="relative min-h-screen w-full overflow-hidden bg-ink"
     >
       <div className="pointer-events-none absolute -top-40 right-[-6rem] h-[30rem] w-[30rem] gold-glow" />
-      <div className="pointer-events-none absolute bottom-[-6rem] left-[-6rem] h-[24rem] w-[24rem] gold-glow opacity-60" />
+      <div className="pointer-events-none absolute bottom-[-6rem] left-[-6rem] h-[24rem] w-[24rem] blush-glow opacity-60" />
 
       <div className="relative mx-auto flex min-h-screen max-w-screen-lg flex-col items-center justify-center gap-12 px-6 py-28 md:flex-row md:gap-16 md:py-0">
         <div className="flex flex-col justify-center text-center md:text-left">
@@ -26,7 +26,7 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group mt-9 inline-flex w-fit cursor-pointer items-center rounded-full border border-gold-300/50 bg-gradient-to-r from-gold-500 to-gold-300 px-7 py-3 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-ink shadow-gold transition-transform duration-300 hover:scale-105"
+              className="group mt-9 inline-flex w-fit cursor-pointer items-center rounded-full border border-blush-300/60 bg-gradient-to-r from-gold-400 to-blush-400 px-7 py-3 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-ink shadow-blush transition-transform duration-300 hover:scale-105"
             >
               View Portfolio
               <span className="ml-2 transition-transform duration-300 group-hover:rotate-90">
