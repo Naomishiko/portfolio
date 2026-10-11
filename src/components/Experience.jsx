@@ -7,6 +7,7 @@ import mongoDB from "../assets/mongoDB.png";
 import node from "../assets/node.png";
 import vscode from "../assets/vscode.png";
 import canva from "../assets/canva.png";
+import { SiPython, SiReact } from "react-icons/si";
 
 const Experience = () => {
   const techs = [
@@ -18,6 +19,8 @@ const Experience = () => {
     { id: 6, src: node, title: "Node" },
     { id: 7, src: vscode, title: "VSCode" },
     { id: 8, src: canva, title: "Canva" },
+    { id: 9, Icon: SiReact, color: "#61DAFB", title: "React" },
+    { id: 10, Icon: SiPython, color: "#3776AB", title: "Python" },
   ];
 
   return (
@@ -34,12 +37,21 @@ const Experience = () => {
         </div>
 
         <div className="grid grid-cols-2 gap-6 text-center sm:grid-cols-3 md:grid-cols-4">
-          {techs.map(({ id, src, title }) => (
+          {techs.map(({ id, src, Icon, color, title }) => (
             <div
               key={id}
               className="group flex flex-col items-center rounded-2xl border border-gold-400/20 bg-beige-50 px-4 py-7 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-gold-400/60 hover:shadow-gold"
             >
-              <img src={src} alt={title} className="h-16 w-16 object-contain" />
+              {src ? (
+                <img src={src} alt={title} className="h-16 w-16 object-contain" />
+              ) : (
+                <Icon
+                  size={64}
+                  color={color}
+                  aria-label={title}
+                  className="h-16 w-16"
+                />
+              )}
               <p className="mt-5 font-sans text-sm font-semibold uppercase tracking-widest text-espresso">
                 {title}
               </p>
