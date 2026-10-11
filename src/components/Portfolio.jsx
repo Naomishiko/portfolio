@@ -36,7 +36,7 @@ return (
          <div className="p-4 mx-auto flex flex-col
          justify-center w-full h-full">
              <div className="pb-8">
-                 <p className="text-4xl font-bold inline border-b-1 border-gray-700 shadow-md shadow-yellow-600 px-5"> 
+                 <p className="text-4xl font-bold inline border-b-2 border-gray-700 shadow-md shadow-yellow-600 px-5"> 
                  Portfolio</p>
                  <p className="py-6">Check out some of my work right here</p>
              </div>
@@ -45,11 +45,11 @@ return (
              <div className="grid sm:grid-cols-4 md:grid-cols-3 gap-8 px-12 sm:px-0">
              {
                  portfolios.map(({id, src, url}) => (
-                    <div key={id}className="shadow-md shadow-pink-700 rounded-lg">
-                     <a href={url}>
+                    <div key={id} className="shadow-md shadow-pink-700 rounded-lg">
+                     <a href={url} target="_blank" rel="noreferrer">
                      <img 
                     src={src}
-                     alt="https://github.com/naomishiko"
+                     alt="Portfolio project"
                      style={{ display: 'block', width:
                     '100%', height: 'auto' }}
                      

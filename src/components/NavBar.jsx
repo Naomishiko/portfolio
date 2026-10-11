@@ -4,7 +4,7 @@ import {Link} from "react-scroll";
 
 const NavBar = () => {
 
-    const {nav, setNav} = useState(false);
+    const [nav, setNav] = useState(false);
 
 
     const links = [
@@ -39,16 +39,20 @@ const NavBar = () => {
             {links.map(({ id, link }) => (
                 <li 
                 key={id}
-                className="px-4 cursor-pointer capitalize font medium
-                text-gray-300 font-bold inline border-b-6 border-pink-300 hover:scale-105 duration-200 ">
+                className="px-4 cursor-pointer capitalize font-medium
+                text-gray-300 font-bold inline border-b-2 border-pink-300 hover:scale-105 duration-200 ">
 
                <Link to={link} smooth duration={500}>
                    {link}</Link>
                 </li>
             ))}
             </ul>
-<div onClick={() => setNav(!nav)} 
-className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+<div
+  onClick={() => setNav(!nav)}
+  role="button"
+  tabIndex={0}
+  aria-label="Toggle menu"
+  className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
 >
     {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
 </div>
@@ -63,10 +67,9 @@ from-black to-gray-800 text-gray-500">
                 <li key={id} className="px-4 cursor-pointer capitalize 
                py-6 text-4xl"
                >
-                    <Link onClick={() => (!nav)}
+                    <Link onClick={() => setNav(false)}
                      to={link} smooth duration={500}>
                    {link}</Link>
-                {link}
                 </li>
 
 ))}
