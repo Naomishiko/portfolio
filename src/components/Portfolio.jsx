@@ -18,7 +18,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div name="portfolio" className="w-full bg-gradient-to-b from-ink to-espresso py-24">
+    <div name="portfolio" className="w-full bg-gradient-to-b from-ink/70 to-espresso/70 py-24">
       <div className="mx-auto flex max-w-screen-lg flex-col px-6">
         <div className="mb-12 text-center md:text-left">
           <p className="font-serif text-4xl font-light text-beige-50 sm:text-5xl md:text-6xl">
