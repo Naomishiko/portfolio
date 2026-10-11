@@ -1,7 +1,6 @@
 import React from "react";
 import lebronjamesTrivia from "../assets/portfolio/lebronjamesTrivia.jpg";
 import tictac from "../assets/portfolio/tictac.jpg";
-import ugc from "../assets/portfolio/ugc.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -14,11 +13,6 @@ const Portfolio = () => {
       id: 2,
       src: tictac,
       url: "https://spontaneous-brioche-3a4022.netlify.app/",
-    },
-    {
-      id: 3,
-      src: ugc,
-      url: "https://naomistudio.tech/",
     },
   ];
 
