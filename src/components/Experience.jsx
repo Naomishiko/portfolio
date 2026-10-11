@@ -1,117 +1,64 @@
 import React from "react";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import github from "../assets/github.png";
-import javascript from "../assets/javascript.png";
-import mongoDB from "../assets/mongoDB.png";
-import node from "../assets/node.png";
-import vscode from "../assets/vscode.png";
-import canva from "../assets/canva.png";
-
-
-
+import {
+  SiCanva,
+  SiCss3,
+  SiGithub,
+  SiHtml5,
+  SiJavascript,
+  SiMongodb,
+  SiNodedotjs,
+  SiPython,
+  SiReact,
+  SiVisualstudiocode,
+} from "react-icons/si";
 
 const Experience = () => {
-
-    const techs = [
-        {
-            id: 1,
-            src: github,
-            title: 'GitHub',
-            style: 'shadow-gray-400'
-        },
-
-        {
-            id: 2,
-            src: html,
-            title: 'HTML',
-            style: 'shadow-orange-500'
-        },
-
-        {
-            id: 3,
-            src: css,
-            title: 'CSS',
-            style: 'shadow-blue-500'
-        },
-
-        {
-            id: 4,
-            src: javascript,
-            title: 'JavaScript',
-            style: 'shadow-pink-500'
-        },
-
-
-
-        {
-            id: 5,
-            src: mongoDB,
-            title: 'mongoDB',
-            style: 'shadow-orange-500'
-        },
-
-
-        {
-            id: 6,
-            src: node,
-            title: 'NODE',
-            style: 'shadow-green-500'
-        },
-
-
-        {   id: 7,
-            src: vscode,
-            title: 'VSCode',
-            style: 'shadow-green-500'
-        },
-
-
-        {   id: 8,
-            src: canva,
-            title: 'Canva',
-            style: 'shadow-blue-500'
-        },
-
-    
-    ]
-
-
+  const techs = [
+    { id: 1, Icon: SiGithub, title: "GitHub" },
+    { id: 2, Icon: SiHtml5, title: "HTML" },
+    { id: 3, Icon: SiCss3, title: "CSS" },
+    { id: 4, Icon: SiJavascript, title: "JavaScript" },
+    { id: 5, Icon: SiMongodb, title: "MongoDB" },
+    { id: 6, Icon: SiNodedotjs, title: "Node" },
+    { id: 7, Icon: SiVisualstudiocode, title: "VSCode" },
+    { id: 8, Icon: SiCanva, title: "Canva" },
+    { id: 9, Icon: SiReact, title: "React" },
+    { id: 10, Icon: SiPython, title: "Python" },
+  ];
 
   return (
-  <div 
-  name="experience" 
-  className="bg-gradient-to-b 
-  from-red-900 to-red-900 via-black w-full h-screen">
+    <div name="experience" className="w-full bg-gradient-to-b from-espresso to-ink py-24">
+      <div className="mx-auto flex max-w-screen-lg flex-col px-6">
+        <div className="mb-12 text-center md:text-left">
+          <p className="font-serif text-4xl font-light text-beige-50 sm:text-5xl md:text-6xl">
+            Exper<span className="text-gold-400">ience</span>
+          </p>
+          <div className="gold-rule mx-auto mt-4 h-px w-40 md:mx-0" />
+          <p className="mt-6 font-sans font-light text-beige-300">
+            Technologies I have worked with
+          </p>
+        </div>
 
-        <div className="max-w-screen-lg mx-auto p-4 flex flex-col
-        justify-items-center text-white">
-            <div>
-                <p className="text-4xl font-bold inline border-b-1 border-gray-700 shadow-md shadow-yellow-600 px-5">
-                Experience
-                </p>
-                <p className="py-6">Technologies I have 
-                worked with</p>
-             </div>
-             <div className="w-full grid grid-cols-2 sm:grid-cols-3 
-             gap-8 text-center py-8 px-12 sm:px-0">
-
-            {
-                techs.map(({id, src, title, style}) => (
-                    <div key={id} className={`shadow-md
-                    py-2 rounded-lg ${style}`}>
-                   <img src={src} alt="" className="w-20 mx-auto"/>
-                   <p className="mt-4">{title}</p>
-                   </div>
-    ))
-}
-                   </div>
-               </div>
-           </div>  
-            
-
-             
+        <div className="grid grid-cols-2 gap-6 text-center sm:grid-cols-3 md:grid-cols-4">
+          {techs.map(({ id, Icon, title }) => (
+            <div
+              key={id}
+              className="group flex flex-col items-center rounded-2xl border border-gold-400/20 bg-beige-50 px-4 py-7 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-gold-400/60 hover:shadow-gold"
+            >
+              <Icon
+                size={64}
+                aria-label={title}
+                className="h-16 w-16 text-espresso transition-colors duration-300 group-hover:text-gold-500"
+              />
+              <p className="mt-5 font-sans text-sm font-semibold uppercase tracking-widest text-espresso">
+                {title}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Experience
+export default Experience;
