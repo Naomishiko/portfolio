@@ -2,6 +2,8 @@ import React from "react";
 import {
   SiCanva,
   SiCss3,
+  SiDjango,
+  SiExpress,
   SiGithub,
   SiHtml5,
   SiJavascript,
@@ -24,6 +26,8 @@ const Experience = () => {
     { id: 8, Icon: SiCanva, title: "Canva" },
     { id: 9, Icon: SiReact, title: "React" },
     { id: 10, Icon: SiPython, title: "Python" },
+    { id: 11, Icon: SiDjango, title: "Django" },
+    { id: 12, Icon: SiExpress, title: "Express" },
   ];
 
   return (
