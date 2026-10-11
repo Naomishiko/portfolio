@@ -1,26 +1,29 @@
 import React from "react";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import github from "../assets/github.png";
-import javascript from "../assets/javascript.png";
-import mongoDB from "../assets/mongoDB.png";
-import node from "../assets/node.png";
-import vscode from "../assets/vscode.png";
-import canva from "../assets/canva.png";
-import { SiPython, SiReact } from "react-icons/si";
+import {
+  SiCanva,
+  SiCss3,
+  SiGithub,
+  SiHtml5,
+  SiJavascript,
+  SiMongodb,
+  SiNodedotjs,
+  SiPython,
+  SiReact,
+  SiVisualstudiocode,
+} from "react-icons/si";
 
 const Experience = () => {
   const techs = [
-    { id: 1, src: github, title: "GitHub" },
-    { id: 2, src: html, title: "HTML" },
-    { id: 3, src: css, title: "CSS" },
-    { id: 4, src: javascript, title: "JavaScript" },
-    { id: 5, src: mongoDB, title: "MongoDB" },
-    { id: 6, src: node, title: "Node" },
-    { id: 7, src: vscode, title: "VSCode" },
-    { id: 8, src: canva, title: "Canva" },
-    { id: 9, Icon: SiReact, color: "#61DAFB", title: "React" },
-    { id: 10, Icon: SiPython, color: "#3776AB", title: "Python" },
+    { id: 1, Icon: SiGithub, title: "GitHub" },
+    { id: 2, Icon: SiHtml5, title: "HTML" },
+    { id: 3, Icon: SiCss3, title: "CSS" },
+    { id: 4, Icon: SiJavascript, title: "JavaScript" },
+    { id: 5, Icon: SiMongodb, title: "MongoDB" },
+    { id: 6, Icon: SiNodedotjs, title: "Node" },
+    { id: 7, Icon: SiVisualstudiocode, title: "VSCode" },
+    { id: 8, Icon: SiCanva, title: "Canva" },
+    { id: 9, Icon: SiReact, title: "React" },
+    { id: 10, Icon: SiPython, title: "Python" },
   ];
 
   return (
@@ -37,21 +40,16 @@ const Experience = () => {
         </div>
 
         <div className="grid grid-cols-2 gap-6 text-center sm:grid-cols-3 md:grid-cols-4">
-          {techs.map(({ id, src, Icon, color, title }) => (
+          {techs.map(({ id, Icon, title }) => (
             <div
               key={id}
               className="group flex flex-col items-center rounded-2xl border border-gold-400/20 bg-beige-50 px-4 py-7 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-gold-400/60 hover:shadow-gold"
             >
-              {src ? (
-                <img src={src} alt={title} className="h-16 w-16 object-contain" />
-              ) : (
-                <Icon
-                  size={64}
-                  color={color}
-                  aria-label={title}
-                  className="h-16 w-16"
-                />
-              )}
+              <Icon
+                size={64}
+                aria-label={title}
+                className="h-16 w-16 text-espresso transition-colors duration-300 group-hover:text-gold-500"
+              />
               <p className="mt-5 font-sans text-sm font-semibold uppercase tracking-widest text-espresso">
                 {title}
               </p>
