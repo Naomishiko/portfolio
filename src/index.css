@@ -64,3 +64,36 @@
     color: transparent;
   }
 }
+
+@keyframes glitter-twinkle {
+  0%,
+  100% {
+    opacity: 0.1;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+}
+
+.glitter-dot {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle,
+    #FBE9E1 0%,
+    #EBB79F 45%,
+    rgba(222, 155, 126, 0) 72%
+  );
+  animation: glitter-twinkle var(--dur, 3s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+  will-change: opacity, transform;
+}
+
+.glitter-haze {
+  background:
+    radial-gradient(ellipse at 20% 15%, rgba(235, 183, 159, 0.12), transparent 55%),
+    radial-gradient(ellipse at 85% 70%, rgba(222, 155, 126, 0.1), transparent 55%),
+    radial-gradient(ellipse at 50% 100%, rgba(226, 128, 156, 0.08), transparent 60%);
+}
