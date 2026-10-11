@@ -36,7 +36,7 @@ const Portfolio = () => {
                 href={url}
                 target="_blank"
                 rel="noreferrer"
-                className="group overflow-hidden rounded-2xl border border-gold-400/25 bg-espresso shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:border-blush-400/70 hover:shadow-blush"
+                className="group overflow-hidden rounded-2xl border border-gold-400/25 bg-espresso shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:border-gold-400/70 hover:shadow-gold"
               >
                 <img
                   src={src}

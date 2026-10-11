@@ -26,7 +26,7 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group mt-9 inline-flex w-fit cursor-pointer items-center rounded-full border border-blush-300/60 bg-gradient-to-r from-gold-400 to-blush-400 px-7 py-3 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-ink shadow-blush transition-transform duration-300 hover:scale-105"
+              className="group mt-9 inline-flex w-fit cursor-pointer items-center rounded-full border border-gold-300/60 bg-gradient-to-r from-gold-500 to-gold-300 px-7 py-3 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-ink shadow-gold transition-transform duration-300 hover:scale-105"
             >
               View Portfolio
               <span className="ml-2 transition-transform duration-300 group-hover:rotate-90">
