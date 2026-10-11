@@ -18,7 +18,7 @@ const Portfolio = () => {
     {
       id: 3,
       src: ugc,
-      url: "https://naomistudio.net/",
+      url: "https://naomistudio.tech/",
     },
   ];
 
