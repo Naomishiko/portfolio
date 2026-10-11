@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 
-const GlitterBackground = ({ count = 55 }) => {
+const GlitterBackground = ({ count = 85 }) => {
   const dots = useMemo(() => {
     const out = [];
     for (let i = 0; i < count; i += 1) {
