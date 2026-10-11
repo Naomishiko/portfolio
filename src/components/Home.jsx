@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="relative min-h-screen w-full overflow-hidden bg-ink"
+      className="relative min-h-screen w-full overflow-hidden bg-ink/70"
     >
       <div className="pointer-events-none absolute -top-40 right-[-6rem] h-[30rem] w-[30rem] gold-glow" />
       <div className="pointer-events-none absolute bottom-[-6rem] left-[-6rem] h-[24rem] w-[24rem] blush-glow opacity-60" />

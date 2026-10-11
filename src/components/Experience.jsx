@@ -33,7 +33,7 @@ const Experience = () => {
   ];
 
   return (
-    <div name="experience" className="w-full bg-gradient-to-b from-espresso to-ink py-24">
+    <div name="experience" className="w-full bg-gradient-to-b from-espresso/70 to-ink/70 py-24">
       <div className="mx-auto flex max-w-screen-lg flex-col px-6">
         <div className="mb-12 text-center md:text-left">
           <p className="font-serif text-4xl font-light text-beige-50 sm:text-5xl md:text-6xl">
