@@ -22,13 +22,10 @@
     position: fixed;
     inset: 0;
     z-index: -20;
-    background-image:
-      linear-gradient(180deg, rgba(212, 175, 55, 0.68), rgba(226, 179, 92, 0.74)),
-      url("./assets/coding-bg.webp");
+    background-image: url("./assets/bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: saturate(1.5) brightness(1.06) contrast(1.05);
   }
 
   body::after {
@@ -38,9 +35,9 @@
     z-index: -10;
     pointer-events: none;
     background:
-      linear-gradient(180deg, rgba(46, 35, 12, 0.5), rgba(56, 43, 15, 0.58)),
-      radial-gradient(ellipse at 80% 8%, rgba(212, 175, 55, 0.42), transparent 55%),
-      radial-gradient(ellipse at 10% 90%, rgba(226, 179, 92, 0.38), transparent 60%);
+      linear-gradient(180deg, rgba(26, 21, 18, 0.62), rgba(36, 29, 23, 0.72)),
+      radial-gradient(ellipse at 80% 8%, rgba(212, 175, 55, 0.26), transparent 55%),
+      radial-gradient(ellipse at 10% 90%, rgba(226, 128, 156, 0.2), transparent 60%);
   }
 
   ::selection {
