@@ -18,7 +18,7 @@
   }
 
   ::selection {
-    background-color: rgba(212, 175, 55, 0.35);
+    background-color: rgba(222, 155, 126, 0.35);
     color: #FDFBF6;
   }
 
@@ -31,34 +31,34 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #7A5F1B;
+    background: #834B37;
     border-radius: 9999px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #C29A2C;
+    background: #C97F60;
   }
 }
 
 @layer components {
   .gold-rule {
-    background-image: linear-gradient(90deg, transparent, #D4AF37, transparent);
+    background-image: linear-gradient(90deg, transparent, #DE9B7E, transparent);
   }
 
   .gold-glow {
-    background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.16), transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(222, 155, 126, 0.18), transparent 70%);
   }
 
   .blush-glow {
-    background: radial-gradient(ellipse at center, rgba(226, 125, 156, 0.18), transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(226, 128, 156, 0.22), transparent 70%);
   }
 
   .accent-rule {
-    background-image: linear-gradient(90deg, transparent, #D4AF37, #E3C46F, transparent);
+    background-image: linear-gradient(90deg, transparent, #DE9B7E, #E2809C, transparent);
   }
 
   .accent-text {
-    background-image: linear-gradient(90deg, #E3C46F, #D4AF37);
+    background-image: linear-gradient(90deg, #E2809C, #DE9B7E);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
