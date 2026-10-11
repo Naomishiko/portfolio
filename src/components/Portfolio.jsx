@@ -32,17 +32,17 @@ const portfolios = [
 
 return (
     <div name="portfolio" className="bg-gradient-to-t from-red-900 to-pink-900 via-black w-full
-     text-white md:h-screen">
+     text-white min-h-screen">
          <div className="p-4 mx-auto flex flex-col
          justify-center w-full h-full">
              <div className="pb-8">
-                 <p className="text-4xl font-bold inline border-b-2 border-gray-700 shadow-md shadow-yellow-600 px-5"> 
+                 <p className="text-3xl sm:text-4xl font-bold inline border-b-2 border-gray-700 shadow-md shadow-yellow-600 px-4 sm:px-5"> 
                  Portfolio</p>
                  <p className="py-6">Check out some of my work right here</p>
              </div>
              
     
-             <div className="grid sm:grid-cols-4 md:grid-cols-3 gap-8 px-12 sm:px-0">
+             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-0">
              {
                  portfolios.map(({id, src, url}) => (
                     <div key={id} className="shadow-md shadow-pink-700 rounded-lg">
@@ -54,12 +54,6 @@ return (
                     '100%', height: 'auto' }}
                      
                     className="rounded-md" />
-                    <div className="flex items-center justify-center">
-                        <button className="w-1/2 px-6 py-3 m-4 ">
-                            </button>
-                        <button  className="w-1/2 px-6 py-3 m-4 ">
-                            </button>
-                    </div>
                     </a>
                     </div>
                 
