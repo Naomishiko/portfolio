@@ -1,7 +1,6 @@
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import About from "./components/About"
-import Appointment from "./components/Appointment";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio"
@@ -16,7 +15,6 @@ function App() {
   <About />
   <Portfolio />
   <Experience />
-  <Appointment />
   <Contact />
   <SocialLinks />
     </div>
