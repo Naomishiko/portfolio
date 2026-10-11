@@ -1,4 +1,5 @@
 import React from "react";
+import { BsStars } from "react-icons/bs";
 import lebronjamesTrivia from "../assets/portfolio/lebronjamesTrivia.jpg";
 import tictac from "../assets/portfolio/tictac.jpg";
 
@@ -21,7 +22,7 @@ const Portfolio = () => {
       <div className="mx-auto flex max-w-screen-lg flex-col px-6">
         <div className="mb-12 text-center md:text-left">
           <p className="font-serif text-4xl font-light text-beige-50 sm:text-5xl md:text-6xl">
-            Port<span className="accent-text">folio</span>
+            <BsStars className="mr-2 inline align-middle text-blush-300" size={22} />Port<span className="accent-text">folio</span><BsStars className="ml-2 inline align-middle text-blush-300" size={22} />
           </p>
           <div className="accent-rule mx-auto mt-4 h-px w-40 md:mx-0" />
           <p className="mt-6 font-sans font-light text-beige-300">
