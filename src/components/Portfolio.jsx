@@ -29,23 +29,23 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-          {portfolios.map(({ id, src, url }) => (
-            <a
-              key={id}
-              href={url}
-              target="_blank"
-              rel="noreferrer"
-              className="group overflow-hidden rounded-2xl border border-gold-400/25 bg-espresso shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:border-gold-400/70 hover:shadow-gold"
-            >
-              <img
-                src={src}
-                alt="Portfolio project"
-                className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-            </a>
-          ))}
-        </div>
+          <div className="mx-auto grid max-w-3xl gap-8 sm:grid-cols-2">
+            {portfolios.map(({ id, src, url }) => (
+              <a
+                key={id}
+                href={url}
+                target="_blank"
+                rel="noreferrer"
+                className="group overflow-hidden rounded-2xl border border-gold-400/25 bg-espresso shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:border-gold-400/70 hover:shadow-gold"
+              >
+                <img
+                  src={src}
+                  alt="Portfolio project"
+                  className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </a>
+            ))}
+          </div>
       </div>
     </div>
   );
