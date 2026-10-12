@@ -1,5 +1,0 @@
-# Netlify build configuration
-[build]
-  # Always run a build. Netlify treats exit 0 from "ignore" as "skip build";
-  # a stale UI "ignore builds" command was skipping every production deploy.
-  ignore = "exit 1"
