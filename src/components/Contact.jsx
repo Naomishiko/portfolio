@@ -1,18 +1,18 @@
 import React from "react";
 
 const fieldClass =
-  "rounded-lg border border-gold-400/25 bg-espresso/60 p-3 text-beige-50 placeholder-beige-500 transition-colors duration-200 focus:border-gold-400 focus:outline-none";
+  "rounded-lg border border-gold-400/50 bg-white/70 p-3 text-ink placeholder-ink/40 transition-colors duration-200 focus:border-gold-400 focus:outline-none";
 
 const Contact = () => {
   return (
-    <div name="contact" className="w-full bg-gradient-to-b from-ink/70 to-espresso/70 py-24">
+    <div name="contact" className="w-full bg-white/35 py-24">
       <div className="mx-auto flex max-w-screen-sm flex-col px-6">
         <div className="mb-10 text-center">
-          <p className="font-serif text-4xl font-light text-beige-50 sm:text-5xl">
+          <p className="font-serif text-4xl font-light text-ink sm:text-5xl">
             Cont<span className="accent-text">act</span>
           </p>
           <div className="accent-rule mx-auto mt-4 h-px w-40" />
-          <p className="mt-6 font-sans font-light text-beige-300">
+          <p className="mt-6 font-sans font-light text-ink/70">
             Submit the form below to get in touch with me
           </p>
         </div>

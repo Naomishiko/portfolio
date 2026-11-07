@@ -17,14 +17,14 @@ const Portfolio = () => {
   ];
 
   return (
-    <div name="portfolio" className="w-full bg-gradient-to-b from-ink/70 to-espresso/70 py-24">
+    <div name="portfolio" className="w-full bg-white/35 py-24">
       <div className="mx-auto flex max-w-screen-lg flex-col px-6">
         <div className="mb-12 text-center md:text-left">
-          <p className="font-serif text-4xl font-light text-beige-50 sm:text-5xl md:text-6xl">
+          <p className="font-serif text-4xl font-light text-ink sm:text-5xl md:text-6xl">
             Port<span className="accent-text">folio</span>
           </p>
           <div className="accent-rule mx-auto mt-4 h-px w-40 md:mx-0" />
-          <p className="mt-6 font-sans font-light text-beige-300">
+          <p className="mt-6 font-sans font-light text-ink/70">
             Check out some of my work right here
           </p>
         </div>
@@ -36,7 +36,7 @@ const Portfolio = () => {
                 href={url}
                 target="_blank"
                 rel="noreferrer"
-                className="group overflow-hidden rounded-2xl border border-gold-400/25 bg-espresso shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:border-gold-400/70 hover:shadow-gold"
+                className="group overflow-hidden rounded-2xl border border-gold-400/50 bg-white/70 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:border-gold-400 hover:shadow-gold"
               >
                 <img
                   src={src}
