@@ -7,12 +7,16 @@ const Portfolio = () => {
     {
       id: 1,
       src: lebronjamesTrivia,
-      url: "https://taupe-treacle-a736a0.netlify.app/",
+      title: "LeBron James Trivia",
+      desc: "21-question trivia game",
+      url: "https://naomishiko.github.io/LeBron-James-Trivia/",
     },
     {
       id: 2,
       src: tictac,
-      url: "https://spontaneous-brioche-3a4022.netlify.app/",
+      title: "Tic Tac Toe",
+      desc: "Pink & gold glitter game",
+      url: "https://naomishiko.github.io/tictac/",
     },
   ];
 
@@ -30,7 +34,7 @@ const Portfolio = () => {
         </div>
 
           <div className="mx-auto grid max-w-3xl gap-8 sm:grid-cols-2">
-            {portfolios.map(({ id, src, url }) => (
+            {portfolios.map(({ id, src, title, desc, url }) => (
               <a
                 key={id}
                 href={url}
@@ -40,9 +44,13 @@ const Portfolio = () => {
               >
                 <img
                   src={src}
-                  alt="Portfolio project"
+                  alt={title}
                   className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
+                <div className="px-5 py-4">
+                  <p className="font-serif text-xl text-ink">{title}</p>
+                  <p className="font-sans text-sm font-light text-ink/60">{desc}</p>
+                </div>
               </a>
             ))}
           </div>
