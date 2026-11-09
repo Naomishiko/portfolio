@@ -15,11 +15,11 @@ const About = () => {
         </div>
         <div className="mx-auto max-w-3xl space-y-6 text-center font-serif text-xl leading-relaxed text-ink/80 sm:text-2xl md:text-[28px] md:leading-relaxed">
           <p>
-            Hi, I&apos;m Naomi — a creative developer and designer.
+            Hi, I&apos;m Naomi, a creative developer and designer.
           </p>
           <p>
             I build websites that feel as good as they look, from the first pixel
-            to the final interaction. I care about the details — the spacing, the
+            to the final interaction. I care about the details: the spacing, the
             motion, the small moments that make a page feel alive. And I care
             about the people using what I make, so every decision starts with them.
           </p>
@@ -31,8 +31,8 @@ const About = () => {
             to every project.
           </p>
           <p>
-            I&apos;m always learning something new — a framework, a tool, a better way
-            to solve a problem — and I&apos;m happiest when an idea turns into
+            I&apos;m always learning something new: a framework, a tool, a better way
+            to solve a problem. I&apos;m happiest when an idea turns into
             something real. Have an idea? I&apos;d love to help bring it to life.
           </p>
         </div>
