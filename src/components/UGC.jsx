@@ -6,7 +6,7 @@ const videos = [
     src: "ugc.mp4",
     poster: "ugc-poster.jpg",
     title: "Red Mask",
-    desc: "Short-form UGC video",
+    desc: "Short UGC video",
   },
 ];
 
