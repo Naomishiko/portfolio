@@ -13,7 +13,7 @@ const About = () => {
           </p>
           <div className="accent-rule mx-auto mt-4 h-px w-40 md:mx-0" />
         </div>
-        <div className="mx-auto max-w-3xl space-y-6 text-center font-serif text-[18.24px] leading-relaxed text-ink/80 sm:text-[21.85px] md:text-[25.56px] md:leading-relaxed">
+        <div className="mx-auto max-w-3xl space-y-6 text-center font-serif text-[15.5px] leading-relaxed text-ink/80 sm:text-[18.57px] md:text-[21.73px] md:leading-relaxed">
           <p>
             Hi, I&apos;m Naomi, a creative developer and designer.
           </p>
