@@ -29,7 +29,7 @@ const Portfolio = () => {
           </p>
           <div className="accent-rule mx-auto mt-4 h-px w-40 md:mx-0" />
           <p className="mt-6 font-sans font-light text-ink/70">
-            Check out some of my work right here
+            A few things I’ve built
           </p>
         </div>
 

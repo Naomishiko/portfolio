@@ -13,7 +13,7 @@ const Contact = () => {
           </p>
           <div className="accent-rule mx-auto mt-4 h-px w-40" />
           <p className="mt-6 font-sans font-light text-ink/70">
-            Submit the form below to get in touch with me
+            Have a project or just want to say hi?
           </p>
         </div>
 

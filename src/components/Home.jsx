@@ -19,7 +19,7 @@ const Home = () => {
             Hello, I&apos;m <span className="font-signature text-blush-500">Naomi</span>
           </h2>
           <p className="mt-6 max-w-md font-sans text-lg font-light text-ink/70">
-            Design meets creativity.
+            Design, code, and a little sparkle.
           </p>
 
           <div>
