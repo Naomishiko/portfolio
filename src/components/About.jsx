@@ -15,21 +15,25 @@ const About = () => {
         </div>
         <div className="mx-auto max-w-3xl space-y-6 text-center font-serif text-xl leading-relaxed text-ink/80 sm:text-2xl md:text-[28px] md:leading-relaxed">
           <p>
-            I&apos;m a creative and passionate developer and designer who loves
-            building websites, crafting intuitive user experiences, and creating
-            visually compelling graphics. I&apos;m driven, energetic, and
-            committed to delivering high-quality work, with a strong eye for
-            design and attention to detail.
+            Hi, I&apos;m Naomi — a creative developer and designer.
           </p>
           <p>
-            I enjoy combining creativity, functionality, and usability to bring
-            ideas to life through meaningful digital experiences. I&apos;m always
-            eager to learn new technologies, explore innovative ideas, embrace
-            new challenges, and continue growing both creatively and technically.
+            I build websites that feel as good as they look, from the first pixel
+            to the final interaction. I care about the details — the spacing, the
+            motion, the small moments that make a page feel alive. And I care
+            about the people using what I make, so every decision starts with them.
           </p>
           <p>
-            My goal is to create aesthetically pleasing, functional, and
-            user-friendly digital solutions that leave a lasting impression.
+            I love where design and code meet: where a sketch becomes a layout, a
+            layout becomes an interface, and an interface becomes something people
+            genuinely enjoy using. Whether it&apos;s a clean landing page, a playful
+            game, or a brand&apos;s visual identity, I bring the same energy and care
+            to every project.
+          </p>
+          <p>
+            I&apos;m always learning something new — a framework, a tool, a better way
+            to solve a problem — and I&apos;m happiest when an idea turns into
+            something real. Have an idea? I&apos;d love to help bring it to life.
           </p>
         </div>
       </div>
