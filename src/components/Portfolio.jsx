@@ -15,7 +15,7 @@ const Portfolio = () => {
       id: 2,
       src: tictac,
       title: "Tic Tac Toe",
-      desc: "Pink & gold glitter game",
+      desc: "Trivia game",
       url: "https://naomishiko.github.io/tictac/",
     },
   ];
