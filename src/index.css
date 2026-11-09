@@ -34,7 +34,7 @@
   :root {
     --star-gap: 110px;
     --star-peak: 1;
-    --star-speed: 7s;
+    --star-speed: 12s;
   }
 
   /* Neon pink star glitter overlay */
