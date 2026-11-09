@@ -5,18 +5,22 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio"
 import SocialLinks from "./components/SocialLinks";
+import UGC from "./components/UGC";
 
 
 function App() {
   return (
     <div>
+  <div className="relative z-10">
   <NavBar />
   <Home />
   <About />
   <Portfolio />
+   <UGC />
   <Experience />
   <Contact />
   <SocialLinks />
+  </div>
     </div>
   );
 }

@@ -1,117 +1,76 @@
 import React from "react";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import github from "../assets/github.png";
-import javascript from "../assets/javascript.png";
-import mongoDB from "../assets/mongoDB.png";
-import node from "../assets/node.png";
-import vscode from "../assets/vscode.png";
-import canva from "../assets/canva.png";
-
-
-
+import {
+  SiCanva,
+  SiCss3,
+  SiDjango,
+  SiExpress,
+  SiGithub,
+  SiHtml5,
+  SiJavascript,
+  SiMongodb,
+  SiNodedotjs,
+  SiPython,
+  SiReact,
+  SiVisualstudiocode,
+} from "react-icons/si";
 
 const Experience = () => {
-
-    const techs = [
-        {
-            id: 1,
-            src: github,
-            title: 'GitHub',
-            style: 'shadow-gray-400'
-        },
-
-        {
-            id: 2,
-            src: html,
-            title: 'HTML',
-            style: 'shadow-orange-500'
-        },
-
-        {
-            id: 3,
-            src: css,
-            title: 'CSS',
-            style: 'shadow-blue-500'
-        },
-
-        {
-            id: 4,
-            src: javascript,
-            title: 'JavaScript',
-            style: 'shadow-pink-500'
-        },
-
-
-
-        {
-            id: 5,
-            src: mongoDB,
-            title: 'mongoDB',
-            style: 'shadow-orange-500'
-        },
-
-
-        {
-            id: 6,
-            src: node,
-            title: 'NODE',
-            style: 'shadow-green-500'
-        },
-
-
-        {   id: 7,
-            src: vscode,
-            title: 'VSCode',
-            style: 'shadow-green-500'
-        },
-
-
-        {   id: 8,
-            src: canva,
-            title: 'Canva',
-            style: 'shadow-blue-500'
-        },
-
-    
-    ]
-
-
+  const techs = [
+    { id: 1, Icon: SiGithub, title: "GitHub", color: "#6e5494" },
+    { id: 2, Icon: SiHtml5, title: "HTML", color: "#E34F26" },
+    { id: 3, Icon: SiCss3, title: "CSS", color: "#1572B6" },
+    { id: 4, Icon: SiJavascript, title: "JavaScript", color: "#F7DF1E" },
+    { id: 5, Icon: SiMongodb, title: "MongoDB", color: "#47A248" },
+    { id: 6, Icon: SiNodedotjs, title: "Node", color: "#5FA04E" },
+    { id: 7, Icon: SiVisualstudiocode, title: "VSCode", color: "#007ACC" },
+    { id: 8, Icon: SiCanva, title: "Canva", color: "#00C4CC" },
+    { id: 9, Icon: SiReact, title: "React", color: "#61DAFB" },
+    { id: 10, Icon: SiPython, title: "Python", color: "#3776AB" },
+    { id: 11, Icon: SiDjango, title: "Django", color: "#092E20" },
+    { id: 12, Icon: SiExpress, title: "Express", color: "#3C3C3C" },
+  ];
 
   return (
-  <div 
-  name="experience" 
-  className="bg-gradient-to-b 
-  from-red-900 to-red-900 via-black w-full h-screen">
+    <div name="experience" className="w-full bg-transparent py-24">
+      <div className="mx-auto flex max-w-screen-lg flex-col px-6">
+        <div className="mb-12 text-center md:text-left">
+          <p className="font-serif text-4xl font-light text-black sm:text-5xl md:text-6xl">
+            Experience
+          </p>
+          <div className="accent-rule mx-auto mt-4 h-px w-40 md:mx-0" />
+          <p className="mt-6 font-sans font-light text-ink/70">
+            Tools and technologies I work with
+          </p>
+        </div>
 
-        <div className="max-w-screen-lg mx-auto p-4 flex flex-col
-        justify-items-center text-white">
-            <div>
-                <p className="text-4xl font-bold inline border-b-1 border-gray-700 shadow-md shadow-yellow-600 px-5">
-                Experience
-                </p>
-                <p className="py-6">Technologies I have 
-                worked with</p>
-             </div>
-             <div className="w-full grid grid-cols-2 sm:grid-cols-3 
-             gap-8 text-center py-8 px-12 sm:px-0">
-
-            {
-                techs.map(({id, src, title, style}) => (
-                    <div key={id} className={`shadow-md
-                    py-2 rounded-lg ${style}`}>
-                   <img src={src} alt="" className="w-20 mx-auto"/>
-                   <p className="mt-4">{title}</p>
-                   </div>
-    ))
-}
-                   </div>
-               </div>
-           </div>  
-            
-
-             
+        <div className="grid grid-cols-2 gap-6 text-center sm:grid-cols-3 md:grid-cols-4">
+          {techs.map(({ id, Icon, title, color }) => (
+            <div
+              key={id}
+              className="group flex flex-col items-center rounded-2xl border px-4 py-7 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-gold"
+              style={{
+                borderColor: `${color}66`,
+                backgroundImage: `linear-gradient(180deg, ${color}26, rgba(250, 245, 236, 0.92))`,
+              }}
+            >
+              <Icon
+                size={64}
+                aria-label={title}
+                style={{ color, filter: `drop-shadow(0 4px 10px ${color}59)` }}
+                className="h-16 w-16 transition-transform duration-300 group-hover:scale-110"
+              />
+              <p
+                className="mt-5 font-sans text-sm font-semibold uppercase tracking-widest text-espresso"
+                style={{ color: `color-mix(in srgb, ${color} 72%, #2A211A)` }}
+              >
+              {title}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Experience
+export default Experience;
