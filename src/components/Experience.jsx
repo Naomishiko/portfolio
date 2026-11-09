@@ -31,7 +31,7 @@ const Experience = () => {
   ];
 
   return (
-    <div name="experience" className="w-full bg-white/35 py-24">
+    <div name="experience" className="w-full bg-transparent py-24">
       <div className="mx-auto flex max-w-screen-lg flex-col px-6">
         <div className="mb-12 text-center md:text-left">
           <p className="font-serif text-4xl font-light text-ink sm:text-5xl md:text-6xl">
