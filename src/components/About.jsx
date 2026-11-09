@@ -36,7 +36,8 @@ const About = () => {
             something real. Have an idea? I&apos;d love to help bring it to life.
           </p>
           <p>
-            I also make UGC content for skincare, makeup, and lifestyle brands.
+            I also make UGC content for skincare, makeup, and lifestyle brands,
+            and I enjoy making videos and editing.
           </p>
         </div>
       </div>
