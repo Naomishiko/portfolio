@@ -21,7 +21,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div name="portfolio" className="w-full bg-transparent py-24">
+    <div name="portfolio" className="w-full bg-transparent py-12 md:py-24">
       <div className="mx-auto flex max-w-screen-lg flex-col px-6">
         <div className="mb-12 text-center md:text-left">
           <p className="font-serif text-4xl font-light text-black sm:text-5xl md:text-6xl">
