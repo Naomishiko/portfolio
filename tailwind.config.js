@@ -56,8 +56,8 @@ module.exports = {
       },
       fontFamily: {
         signature: ["'Merriweather'", "Georgia", "serif"],
-        serif: ["'Cormorant Garamond'", "Georgia", "serif"],
-        sans: ["'Raleway'", "system-ui", "sans-serif"],
+        serif: ["'Merriweather'", "Georgia", "serif"],
+        sans: ["'Merriweather'", "Georgia", "serif"],
       },
       boxShadow: {
         gold: "0 18px 40px -18px rgba(212, 175, 55, 0.6)",
