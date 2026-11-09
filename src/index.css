@@ -32,7 +32,7 @@
        --star-peak:  0 to 1  = FAINTER to BRIGHTER
        --star-speed: shorter = FASTER fade, longer = SLOWER   */
   :root {
-    --star-gap: 110px;
+    --star-gap: 260px;
     --star-peak: 1;
     --star-speed: 12s;
   }
