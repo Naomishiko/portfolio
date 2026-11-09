@@ -3,8 +3,8 @@ import React, { useState } from "react";
 const videos = [
   {
     id: 1,
-    src: "/ugc.mp4",
-    poster: "/ugc-poster.jpg",
+    src: "ugc.mp4",
+    poster: "ugc-poster.jpg",
     title: "Skincare routine",
     desc: "Short-form UGC video",
   },
