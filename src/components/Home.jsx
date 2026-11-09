@@ -16,7 +16,7 @@ const Home = () => {
       <div className="relative mx-auto flex w-full max-w-screen-lg flex-col items-center justify-center gap-8 px-6 pb-10 pt-24 md:min-h-screen md:flex-row md:gap-16 md:py-0">
         <div className="flex flex-col justify-center text-center md:text-left">
           <h2 className="font-serif text-5xl font-light leading-[1.05] text-ink sm:text-6xl md:text-7xl">
-            Hello, I&apos;m <span className="font-signature text-blush-500">Naomi</span>
+            Hello, I&apos;m <span className="font-signature text-ink">Naomi</span>
           </h2>
           <p className="mt-6 max-w-md font-sans text-lg font-light text-ink/70">
             Design, code, and a little sparkle.
