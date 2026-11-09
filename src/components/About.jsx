@@ -36,11 +36,7 @@ const About = () => {
             something real. Have an idea? I&apos;d love to help bring it to life.
           </p>
           <p>
-            I&apos;m also a UGC creator. I make short, honest skincare videos that
-            feel like a friend&apos;s recommendation rather than an ad: real
-            routines, real results, filmed close-up and made to stop the scroll.
-            If your brand needs content that looks real and connects, I&apos;d love
-            to work with you.
+            I also make UGC content for skincare, makeup, and lifestyle brands.
           </p>
         </div>
       </div>
