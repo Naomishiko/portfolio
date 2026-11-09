@@ -8,12 +8,12 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="relative min-h-screen w-full overflow-hidden bg-transparent"
+      className="relative w-full overflow-hidden bg-transparent md:min-h-screen"
     >
       <div className="pointer-events-none absolute -top-40 right-[-6rem] h-[30rem] w-[30rem] gold-glow" />
       <div className="pointer-events-none absolute bottom-[-6rem] left-[-6rem] h-[24rem] w-[24rem] blush-glow opacity-60" />
 
-      <div className="relative mx-auto flex min-h-screen max-w-screen-lg flex-col items-center justify-center gap-8 px-6 py-12 md:flex-row md:gap-16 md:py-0">
+      <div className="relative mx-auto flex w-full max-w-screen-lg flex-col items-center justify-center gap-8 px-6 pb-10 pt-24 md:min-h-screen md:flex-row md:gap-16 md:py-0">
         <div className="flex flex-col justify-center text-center md:text-left">
           <h2 className="font-serif text-5xl font-light leading-[1.05] text-ink sm:text-6xl md:text-7xl">
             Hello, I&apos;m <span className="font-signature text-blush-500">Naomi</span>
