@@ -188,9 +188,9 @@
   position: relative;
   z-index: 2;
   display: block;
-  padding: 1.16em 2.86em;
+  padding: 1.28em 3.15em;
   font-family: 'Merriweather', Georgia, serif;
-  font-size: 0.88rem;
+  font-size: 0.97rem;
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -311,7 +311,7 @@
   display: flex;
   gap: 2rem;
   width: max-content;
-  animation: work-slide 26s linear infinite;
+  animation: work-slide 104s linear infinite;
 }
 
 .work-track:hover {
@@ -405,7 +405,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .work-track {
-    animation-duration: 120s;
+    animation-duration: 480s;
   }
   .work-slide,
   .work-slide__media img {

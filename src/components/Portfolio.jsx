@@ -20,8 +20,9 @@ const Portfolio = () => {
     },
   ];
 
-  // duplicate the set so the slide loops seamlessly
-  const slides = [...portfolios, ...portfolios];
+  // repeat + duplicate so one loop half is always wider than the viewport
+  const base = [...portfolios, ...portfolios, ...portfolios, ...portfolios];
+  const slides = [...base, ...base];
 
   return (
     <div name="portfolio" className="w-full bg-transparent py-10 md:py-16">
