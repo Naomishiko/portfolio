@@ -153,14 +153,14 @@
   display: grid;
   overflow: hidden;
   width: 100%;
-  height: clamp(280px, 42vw, 400px);
-  perspective: 40em;
+  height: clamp(380px, 58vw, 620px);
+  perspective: 52em;
   -webkit-mask: linear-gradient(90deg, #0000, #000 18% 82%, #0000);
   mask: linear-gradient(90deg, #0000, #000 18% 82%, #0000);
 }
 
 .tech-ring {
-  --w: clamp(6.5em, 13vw, 9em);
+  --w: clamp(9em, 19vw, 13em);
   --ba: calc(1turn / var(--n));
   --r: calc((0.5 * var(--w) + 0.5em) / tan(0.5 * var(--ba)));
   display: grid;
@@ -196,7 +196,7 @@
 }
 
 .tech-card-label {
-  font-size: clamp(0.5rem, 1.6vw, 0.68rem);
+  font-size: clamp(0.6rem, 1.9vw, 0.82rem);
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;

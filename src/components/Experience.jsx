@@ -56,10 +56,10 @@ const Experience = () => {
                 }}
               >
                 <Icon
-                  size={48}
+                  size={72}
                   aria-label={title}
-                  style={{ color, filter: `drop-shadow(0 4px 10px ${color}59)` }}
-                  className="h-10 w-10 sm:h-12 sm:w-12"
+                  style={{ color, filter: `drop-shadow(0 6px 14px ${color}59)` }}
+                  className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20"
                 />
                 <span className="tech-card-label">{title}</span>
               </div>
