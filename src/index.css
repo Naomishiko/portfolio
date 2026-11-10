@@ -209,3 +209,88 @@
     animation-duration: 150s;
   }
 }
+
+/* ---- Gold outlined "shine" button (after flowmotion-code) ---- */
+.gold-shine-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto 0;
+  padding: 0;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.gold-shine-btn > span {
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 1.05em 2.6em;
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  background: linear-gradient(295deg, #7a5200 5%, #b8860b 50%, #8a5f0a 95%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition: filter 0.5s ease;
+}
+
+.gold-shine-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  background: conic-gradient(
+    rgba(212, 175, 55, 0.4) 0deg,
+    rgba(212, 175, 55, 0.4) 100deg,
+    rgba(212, 175, 55, 0.4) 150deg,
+    rgba(212, 175, 55, 0.4) 230deg,
+    rgba(191, 122, 0, 0.85) 250deg,
+    rgba(242, 187, 90, 0.95) 280deg,
+    #ffe195 280deg,
+    rgba(242, 187, 90, 0.95) 300deg,
+    rgba(191, 122, 0, 0.85) 310deg,
+    rgba(212, 175, 55, 0.4) 360deg
+  );
+  transform: scaleX(4) scaleY(2) rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+.gold-shine-btn:hover::before,
+.gold-shine-btn:focus-visible::before {
+  transform: scaleX(4) scaleY(2) rotate(-360deg);
+}
+
+.gold-shine-btn::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  z-index: 1;
+  border-radius: inherit;
+  background: #fff2f8;
+  transition: background 0.5s ease;
+}
+
+.gold-shine-btn:hover::after,
+.gold-shine-btn:focus-visible::after {
+  background: #fff0d8;
+}
+
+.gold-shine-btn:hover > span,
+.gold-shine-btn:focus-visible > span {
+  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.65));
+}
+
+.gold-shine-btn:focus-visible {
+  outline: none;
+}

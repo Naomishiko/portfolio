@@ -41,8 +41,8 @@ const Contact = () => {
             className={fieldClass}
           />
 
-          <button className="mx-auto mt-8 flex items-center rounded-full border border-blush-300/60 bg-gradient-to-r from-gold-400 to-blush-300 px-10 py-4 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-ink shadow-blush transition-transform duration-300 hover:scale-105">
-            Get In Touch
+          <button type="submit" className="gold-shine-btn">
+            <span>Get In Touch</span>
           </button>
         </form>
       </div>
