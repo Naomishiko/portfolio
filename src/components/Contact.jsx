@@ -6,7 +6,7 @@ const fieldClass =
 const Contact = () => {
   return (
     <div name="contact" className="w-full bg-transparent py-10 md:py-16">
-      <div className="mx-auto flex w-full max-w-screen-2xl flex-col px-6 md:px-10">
+      <div className="mx-auto flex w-full max-w-4xl flex-col px-6 md:px-10">
         <div className="mb-10 text-center">
           <p className="font-serif text-4xl font-light text-black sm:text-5xl md:text-6xl">
             Contact
