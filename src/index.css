@@ -416,22 +416,6 @@
   transform: scale(1.08);
 }
 
-.work-card__tag {
-  position: absolute;
-  z-index: 2;
-  top: 0.85rem;
-  left: 0.85rem;
-  border-radius: 9999px;
-  padding: 0.25rem 0.7rem;
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #3a2708;
-  background: linear-gradient(135deg, #ffe195, #d4af37);
-  box-shadow: 0 4px 12px rgba(95, 69, 15, 0.35);
-}
-
 .work-card__cta {
   position: absolute;
   z-index: 2;

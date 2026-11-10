@@ -43,7 +43,6 @@ const Portfolio = () => {
                 className="work-card group"
               >
                 <div className="work-card__media">
-                  <span className="work-card__tag">Web Game</span>
                   <img src={src} alt={title} />
                   <span className="work-card__cta">
                     Play
