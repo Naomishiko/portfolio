@@ -27,6 +27,34 @@
       linear-gradient(135deg, #ffe3f1 0%, #ffb6d9 30%, #ffe9a8 65%, #ffc7e3 100%);
   }
 
+  /* ---- GOLD GLITTER ----
+       Shimmering gold sparkle texture (after xschx "gold glitter").
+       --glitter-strength: 0 to 1 = SUBTLE to SPARKLY
+       --glitter-speed:    shorter = FASTER shimmer, longer = SLOWER */
+  :root {
+    --glitter-strength: 0.6;
+    --glitter-speed: 24s;
+  }
+
+  html::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -25;
+    pointer-events: none;
+    background-image: url("./assets/glitter.png");
+    background-size: 320px 214px;
+    background-repeat: repeat;
+    mix-blend-mode: soft-light;
+    opacity: var(--glitter-strength);
+    animation: glitter-shimmer var(--glitter-speed) linear infinite;
+  }
+
+  @keyframes glitter-shimmer {
+    0%   { background-position: 0 214px; }
+    100% { background-position: 0 0; }
+  }
+
   /* ---- STAR SETTINGS ----
        --star-peak:  0 to 1  = FAINTER to BRIGHTER
        --star-speed: shorter = FASTER fade, longer = SLOWER
@@ -207,6 +235,9 @@
 @media (prefers-reduced-motion: reduce) {
   .tech-ring {
     animation-duration: 150s;
+  }
+  html::before {
+    animation: none;
   }
 }
 
