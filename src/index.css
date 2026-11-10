@@ -153,14 +153,14 @@
   display: grid;
   overflow: hidden;
   width: 100%;
-  height: clamp(380px, 58vw, 620px);
-  perspective: 52em;
+  height: clamp(420px, 64vw, 700px);
+  perspective: 58em;
   -webkit-mask: linear-gradient(90deg, #0000, #000 18% 82%, #0000);
   mask: linear-gradient(90deg, #0000, #000 18% 82%, #0000);
 }
 
 .tech-ring {
-  --w: clamp(9em, 19vw, 13em);
+  --w: clamp(10em, 22vw, 15em);
   --ba: calc(1turn / var(--n));
   --r: calc((0.5 * var(--w) + 0.5em) / tan(0.5 * var(--ba)));
   display: grid;
