@@ -1,7 +1,7 @@
 import React from "react";
 import naomishiko from "../assets/naomishiko.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { BsStars, BsSuitHeart } from "react-icons/bs";
+import { BsStars } from "react-icons/bs";
 import { Link } from "react-scroll";
 
 const Home = () => {
@@ -39,16 +39,10 @@ const Home = () => {
         </div>
 
         <div className="relative">
-          <div className="absolute inset-0 -m-4 rounded-[2rem] border border-gold-400/50" />
           <img
             src={naomishiko}
             alt="Naomi"
-            className="relative w-56 rounded-[1.75rem] shadow-soft sm:w-72 md:w-80"
-          />
-          <BsSuitHeart
-            className="absolute -bottom-3 -right-3 rounded-full bg-gold-600 p-1.5 text-gold-50 shadow-gold"
-            size={36}
-            aria-hidden="true"
+            className="blend-photo relative w-60 sm:w-80 md:w-[22rem]"
           />
         </div>
       </div>
