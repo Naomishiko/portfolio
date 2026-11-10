@@ -294,3 +294,24 @@
 .gold-shine-btn:focus-visible {
   outline: none;
 }
+
+/* ---- Metallic gold nav buttons (after tomhermans) ---- */
+.nav-gold-btn {
+  display: inline-block;
+  background:
+    radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  color: #3a2708;
+  border: 0;
+  border-radius: 8px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+  box-shadow: 0 2px 1px #5f450f, inset 0 0 0 1px rgba(95, 69, 15, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.nav-gold-btn:hover,
+.nav-gold-btn:focus-visible {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+  box-shadow: 0 5px 12px rgba(95, 69, 15, 0.45), inset 0 0 0 1px rgba(95, 69, 15, 0.3);
+}

@@ -20,14 +20,14 @@ const NavBar = () => {
         Naomi
       </h1>
 
-      <ul className="hidden md:flex">
+      <ul className="hidden items-center gap-3 md:flex">
         {links.map(({ id, link }) => (
-          <li key={id} className="px-4">
+          <li key={id}>
             <Link
               to={link}
               smooth
               duration={500}
-              className="cursor-pointer font-sans text-sm font-medium uppercase tracking-[0.2em] text-ink/70 transition-colors duration-200 hover:text-gold-500"
+              className="nav-gold-btn cursor-pointer px-4 py-2 font-sans text-xs font-semibold uppercase tracking-[0.2em]"
             >
               {link}
             </Link>
@@ -48,13 +48,13 @@ const NavBar = () => {
       {nav && (
         <ul className="absolute left-0 top-0 z-10 flex h-screen w-full flex-col items-center justify-center gap-2 bg-gradient-to-b from-white/95 to-pink-100/95">
           {links.map(({ id, link }) => (
-            <li key={id} className="px-4 py-4">
+            <li key={id} className="px-4 py-2">
               <Link
                 onClick={() => setNav(false)}
                 to={link}
                 smooth
                 duration={500}
-                className="cursor-pointer font-serif text-3xl capitalize text-ink transition-colors duration-200 hover:text-gold-500 sm:text-4xl"
+                className="nav-gold-btn cursor-pointer px-8 py-3 font-serif text-2xl capitalize sm:text-3xl"
               >
                 {link}
               </Link>
