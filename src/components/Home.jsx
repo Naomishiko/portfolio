@@ -42,7 +42,7 @@ const Home = () => {
           <img
             src={naomishiko}
             alt="Naomi"
-            className="blend-photo relative w-60 sm:w-80 md:w-[22rem]"
+            className="blend-photo relative w-72 sm:w-[22rem] md:w-[28rem]"
           />
         </div>
       </div>

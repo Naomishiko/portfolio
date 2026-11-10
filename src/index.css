@@ -11,11 +11,11 @@
   }
 
   body {
-    background-color: #fdfbf6;
+    background-color: #faf7f1;
     color: #5b1b3a;
   }
 
-  /* Soft white wavy fabric background with gentle gold folds */
+  /* Glossy white wallpaper with soft pearl sheen streaks */
   body::before {
     content: "";
     position: fixed;
@@ -32,7 +32,7 @@
        --glitter-strength: 0 to 1 = SUBTLE to SPARKLY
        --glitter-speed:    shorter = FASTER shimmer, longer = SLOWER */
   :root {
-    --glitter-strength: 0.6;
+    --glitter-strength: 0.22;
     --glitter-speed: 24s;
   }
 
@@ -53,79 +53,6 @@
   @keyframes glitter-shimmer {
     0%   { background-position: 0 214px; }
     100% { background-position: 0 0; }
-  }
-
-  /* ---- FLOATING MARK SETTINGS ----
-       --star-peak:  0 to 1  = FAINTER to BRIGHTER
-       --star-speed: shorter = FASTER fade, longer = SLOWER
-       (Exactly 15 </> marks, fixed positions - won't multiply on big screens.) */
-  :root {
-    --star-peak: 1;
-    --star-speed: 12s;
-  }
-
-  /* Gold code-bracket overlay - 15 fixed </> marks */
-  body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -20;
-    pointer-events: none;
-    background-image:
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(-15)%20translate(-50%20-50)'%20opacity='0.6'><g%20fill='none'%20stroke='%23e6bd5a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>"),
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(12)%20translate(-50%20-50)'%20opacity='0.5'><g%20fill='none'%20stroke='%23e6bd5a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>"),
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(-8)%20translate(-50%20-50)'%20opacity='0.55'><g%20fill='none'%20stroke='%23bd8b2a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>"),
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(20)%20translate(-50%20-50)'%20opacity='0.5'><g%20fill='none'%20stroke='%23e6bd5a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>"),
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(-22)%20translate(-50%20-50)'%20opacity='0.45'><g%20fill='none'%20stroke='%23e6bd5a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>"),
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(10)%20translate(-50%20-50)'%20opacity='0.55'><g%20fill='none'%20stroke='%23bd8b2a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>"),
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(16)%20translate(-50%20-50)'%20opacity='0.5'><g%20fill='none'%20stroke='%23e6bd5a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>"),
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(-12)%20translate(-50%20-50)'%20opacity='0.55'><g%20fill='none'%20stroke='%23e6bd5a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>"),
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(8)%20translate(-50%20-50)'%20opacity='0.45'><g%20fill='none'%20stroke='%23bd8b2a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>"),
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(22)%20translate(-50%20-50)'%20opacity='0.6'><g%20fill='none'%20stroke='%23e6bd5a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>"),
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(-18)%20translate(-50%20-50)'%20opacity='0.5'><g%20fill='none'%20stroke='%23e6bd5a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>"),
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(12)%20translate(-50%20-50)'%20opacity='0.55'><g%20fill='none'%20stroke='%23bd8b2a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>"),
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(-10)%20translate(-50%20-50)'%20opacity='0.45'><g%20fill='none'%20stroke='%23e6bd5a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>"),
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(18)%20translate(-50%20-50)'%20opacity='0.55'><g%20fill='none'%20stroke='%23e6bd5a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>"),
-      url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'><g%20transform='translate(50%2050)%20rotate(-14)%20translate(-50%20-50)'%20opacity='0.55'><g%20fill='none'%20stroke='%23bd8b2a'%20stroke-width='10'%20stroke-linecap='round'%20stroke-linejoin='round'><polyline%20points='34,22%2010,50%2034,78'/><line%20x1='60'%20y1='22'%20x2='40'%20y2='78'/><polyline%20points='66,22%2090,50%2066,78'/></g></g></svg>");
-    background-size:
-      30px 30px,
-      22px 22px,
-      35px 35px,
-      24px 24px,
-      19px 19px,
-      32px 32px,
-      24px 24px,
-      30px 30px,
-      20px 20px,
-      35px 35px,
-      23px 23px,
-      32px 32px,
-      22px 22px,
-      27px 27px,
-      30px 30px;
-    background-position:
-      8% 12%,
-      24% 26%,
-      41% 9%,
-      57% 24%,
-      74% 13%,
-      90% 30%,
-      15% 47%,
-      33% 60%,
-      50% 45%,
-      67% 63%,
-      84% 52%,
-      22% 80%,
-      46% 88%,
-      69% 81%,
-      89% 91%;
-    background-repeat: no-repeat;
-    animation: flutter var(--star-speed) ease-in-out infinite;
-  }
-
-  @keyframes flutter {
-    0%, 100% { opacity: 0; }
-    50%      { opacity: var(--star-peak); }
   }
 
   ::selection {
@@ -347,11 +274,11 @@
   box-shadow: 0 5px 12px rgba(95, 69, 15, 0.45), inset 0 0 0 1px rgba(95, 69, 15, 0.3);
 }
 
-/* ---- Soft-blended portrait (fades into the background) ---- */
+/* ---- Soft-blended portrait (fades gently into the background) ---- */
 .blend-photo {
-  -webkit-mask-image: radial-gradient(ellipse 58% 62% at 50% 45%, #000 40%, transparent 88%);
-  mask-image: radial-gradient(ellipse 58% 62% at 50% 45%, #000 40%, transparent 88%);
-  filter: drop-shadow(0 12px 30px rgba(95, 69, 15, 0.18));
+  -webkit-mask-image: radial-gradient(ellipse 74% 80% at 50% 46%, #000 72%, transparent 100%);
+  mask-image: radial-gradient(ellipse 74% 80% at 50% 46%, #000 72%, transparent 100%);
+  filter: drop-shadow(0 14px 34px rgba(95, 69, 15, 0.16));
 }
 
 /* ---- Portfolio "work" cards (template-inspired, gold/pink) ---- */
