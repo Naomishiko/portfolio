@@ -11,7 +11,7 @@
   }
 
   body {
-    background-color: #faf7f1;
+    background-color: #f7f3ea;
     color: #5b1b3a;
   }
 
@@ -276,9 +276,9 @@
 
 /* ---- Soft-blended portrait (fades gently into the background) ---- */
 .blend-photo {
-  -webkit-mask-image: radial-gradient(ellipse 74% 80% at 50% 46%, #000 72%, transparent 100%);
-  mask-image: radial-gradient(ellipse 74% 80% at 50% 46%, #000 72%, transparent 100%);
-  filter: drop-shadow(0 14px 34px rgba(95, 69, 15, 0.16));
+  -webkit-mask-image: radial-gradient(ellipse 92% 94% at 50% 47%, #000 88%, transparent 100%);
+  mask-image: radial-gradient(ellipse 92% 94% at 50% 47%, #000 88%, transparent 100%);
+  filter: drop-shadow(0 14px 34px rgba(95, 69, 15, 0.14));
 }
 
 /* ---- Portfolio "work" cards (template-inspired, gold/pink) ---- */
