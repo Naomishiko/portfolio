@@ -4,6 +4,36 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { BsStars } from "react-icons/bs";
 import { Link } from "react-scroll";
 
+
+const RING_TEXT = "HELLO, I'M NAOMI";
+const RING_SECTORS = 30;
+
+const TextRing = () => {
+  const chars = Array.from({ length: RING_SECTORS }, (_, i) =>
+    i < RING_TEXT.length ? RING_TEXT[i] : ""
+  );
+
+  return (
+    <div className="text-ring" aria-label={RING_TEXT} role="img">
+      {[0, 1].map((ring) => (
+        <div className="text-ring__ring" key={ring}>
+          {chars.map((ch, i) => (
+            <div
+              className="text-ring__sector"
+              style={{ "--i": i }}
+              key={i}
+              aria-hidden="true"
+            >
+              {ch}
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+
 const Home = () => {
   return (
     <div
@@ -15,9 +45,8 @@ const Home = () => {
 
       <div className="relative mx-auto flex w-full max-w-screen-lg flex-col items-center justify-center gap-8 px-6 pb-10 pt-24 md:min-h-screen md:flex-row md:gap-16 md:py-0">
         <div className="flex flex-col justify-center text-center md:text-left">
-          <h2 className="font-serif text-5xl font-light leading-[1.05] text-ink sm:text-6xl md:text-7xl">
-            Hello, I&apos;m <span className="font-signature text-ink">Naomi</span>
-          </h2>
+          <h2 className="sr-only">Hello, I&apos;m Naomi</h2>
+          <TextRing />
           <p className="mt-6 max-w-md font-sans text-lg font-light text-ink/70">
             Design, code, and a little sparkle.
           </p>
