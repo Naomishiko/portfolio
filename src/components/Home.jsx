@@ -27,7 +27,7 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group mt-9 inline-flex w-fit cursor-pointer items-center rounded-full border border-blush-300/60 bg-gradient-to-r from-gold-400 to-blush-300 px-7 py-3 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-ink shadow-blush transition-transform duration-300 hover:scale-105"
+              className="group mt-9 inline-flex w-fit cursor-pointer items-center rounded-full border border-gold-500/60 bg-gradient-to-r from-gold-300 to-gold-500 px-7 py-3 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-ink shadow-gold transition-transform duration-300 hover:scale-105"
             >
               <BsStars className="mr-2" size={18} />
               View Portfolio
@@ -46,7 +46,7 @@ const Home = () => {
             className="relative w-56 rounded-[1.75rem] shadow-soft sm:w-72 md:w-80"
           />
           <BsSuitHeart
-            className="absolute -bottom-3 -right-3 rounded-full bg-blush-500 p-1.5 text-blush-50 shadow-blush"
+            className="absolute -bottom-3 -right-3 rounded-full bg-gold-600 p-1.5 text-gold-50 shadow-gold"
             size={36}
             aria-hidden="true"
           />
