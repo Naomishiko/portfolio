@@ -11,26 +11,20 @@
   }
 
   body {
-    background-color: #fff4cf;
+    background-color: #fdfbf6;
     color: #5b1b3a;
   }
 
-  /* Muted champagne gradient, soft pink glow, 5% black veil, darker middle,
-     and a white glow on the right to mirror the left */
+  /* Soft white wavy fabric background with gentle gold folds */
   body::before {
     content: "";
     position: fixed;
     inset: 0;
     z-index: -30;
-    background:
-      radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.09), transparent 55%),
-      linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
-      radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.6), transparent 45%),
-      radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.6), transparent 45%),
-      radial-gradient(circle at 82% 4%, rgba(255, 233, 168, 0.7), transparent 50%),
-      radial-gradient(circle at 88% 14%, rgba(255, 150, 196, 0.55), transparent 42%),
-      radial-gradient(circle at 10% 90%, rgba(255, 160, 202, 0.4), transparent 40%),
-      linear-gradient(135deg, #fff8e6 0%, #f7e3ad 30%, #ecd49a 65%, #f6e6bd 100%);
+    background-image: url("./assets/fabric.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   /* ---- GOLD GLITTER ----
