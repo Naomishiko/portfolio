@@ -20,11 +20,11 @@ const SocialLinks = () => {
         {links.map(({ id, child, href, download }) => (
           <li
             key={id}
-            className="ml-[-100px] flex h-24 w-40 items-center justify-between bg-gradient-to-r from-gold-500 to-gold-300 px-4 duration-300 hover:ml-[-10px] hover:rounded-md"
+            className="mail-tab ml-[-100px] flex h-24 w-40 items-center justify-between px-4 duration-300 hover:ml-[-10px] hover:rounded-md"
           >
             <a
               href={href}
-              className="flex w-full items-center justify-between font-sans text-sm font-semibold uppercase tracking-widest text-ink"
+              className="flex w-full items-center justify-between font-sans text-sm font-semibold uppercase tracking-widest"
               download={download}
               target="_blank"
               rel="noreferrer"
