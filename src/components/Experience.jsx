@@ -32,7 +32,7 @@ const Experience = () => {
 
   return (
     <div name="experience" className="w-full bg-transparent py-10 md:py-16">
-      <div className="mx-auto flex max-w-screen-lg flex-col px-6">
+      <div className="mx-auto flex max-w-screen-2xl flex-col px-6 md:px-10">
         <div className="mb-12 text-center md:text-left">
           <p className="font-serif text-4xl font-light text-black sm:text-5xl md:text-6xl">
             Experience

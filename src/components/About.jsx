@@ -6,14 +6,14 @@ const About = () => {
       name="about"
       className="w-full bg-transparent py-10 md:py-16"
     >
-      <div className="mx-auto flex max-w-screen-lg flex-col px-6">
+      <div className="mx-auto flex max-w-screen-2xl flex-col px-6 md:px-10">
         <div className="mb-10 text-center md:text-left">
           <p className="font-serif text-4xl font-light text-black sm:text-5xl md:text-6xl">
             About Me
           </p>
           <div className="accent-rule mx-auto mt-4 h-px w-40 md:mx-0" />
         </div>
-        <div className="mx-auto max-w-3xl space-y-6 text-center font-serif text-[12.59px] leading-relaxed text-ink/95 sm:text-[15.08px] md:text-[17.65px] md:leading-relaxed">
+        <div className="mx-auto max-w-4xl space-y-6 text-center font-serif text-[12.59px] leading-relaxed text-ink/95 sm:text-[15.08px] md:text-[17.65px] md:leading-relaxed">
           <p>
             Hi, I&apos;m Naomi, a creative developer and designer.
           </p>
