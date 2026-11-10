@@ -43,30 +43,28 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-6 text-center sm:grid-cols-3 md:grid-cols-4">
-          {techs.map(({ id, Icon, title, color }) => (
-            <div
-              key={id}
-              className="group flex flex-col items-center rounded-2xl border px-4 py-7 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-gold"
-              style={{
-                borderColor: `${color}66`,
-                backgroundImage: `linear-gradient(180deg, ${color}26, rgba(250, 245, 236, 0.92))`,
-              }}
-            >
-              <Icon
-                size={64}
-                aria-label={title}
-                style={{ color, filter: `drop-shadow(0 4px 10px ${color}59)` }}
-                className="h-16 w-16 transition-transform duration-300 group-hover:scale-110"
-              />
-              <p
-                className="mt-5 font-sans text-sm font-semibold uppercase tracking-widest text-espresso"
-                style={{ color: `color-mix(in srgb, ${color} 72%, #2A211A)` }}
+        <div className="tech-scene">
+          <div className="tech-ring" style={{ "--n": techs.length }}>
+            {techs.map(({ id, Icon, title, color }, i) => (
+              <div
+                key={id}
+                className="tech-card shadow-soft"
+                style={{
+                  "--i": i,
+                  borderColor: `${color}66`,
+                  backgroundImage: `linear-gradient(180deg, ${color}26, rgba(250, 245, 236, 0.92))`,
+                }}
               >
-              {title}
-              </p>
-            </div>
-          ))}
+                <Icon
+                  size={48}
+                  aria-label={title}
+                  style={{ color, filter: `drop-shadow(0 4px 10px ${color}59)` }}
+                  className="h-10 w-10 sm:h-12 sm:w-12"
+                />
+                <span className="tech-card-label">{title}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

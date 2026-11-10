@@ -147,3 +147,65 @@
     color: transparent;
   }
 }
+
+/* ---- 3D rotating "tools & technologies" ring (pure CSS, after Ana Tudor's carousel) ---- */
+.tech-scene {
+  display: grid;
+  overflow: hidden;
+  width: 100%;
+  height: clamp(280px, 42vw, 400px);
+  perspective: 40em;
+  -webkit-mask: linear-gradient(90deg, #0000, #000 18% 82%, #0000);
+  mask: linear-gradient(90deg, #0000, #000 18% 82%, #0000);
+}
+
+.tech-ring {
+  --w: clamp(6.5em, 13vw, 9em);
+  --ba: calc(1turn / var(--n));
+  --r: calc((0.5 * var(--w) + 0.5em) / tan(0.5 * var(--ba)));
+  display: grid;
+  place-self: center;
+  transform-style: preserve-3d;
+  animation: tech-spin 38s linear infinite;
+}
+
+.tech-ring:hover {
+  animation-play-state: paused;
+}
+
+@keyframes tech-spin {
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
+.tech-card {
+  grid-area: 1 / 1;
+  width: var(--w);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  gap: 0.4em;
+  padding: 0.6em;
+  border-radius: 1.3em;
+  border: 1px solid;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(calc(var(--i) * var(--ba))) translateZ(calc(-1 * var(--r)));
+}
+
+.tech-card-label {
+  font-size: clamp(0.5rem, 1.6vw, 0.68rem);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #2e0b1a;
+  line-height: 1.1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-ring {
+    animation-duration: 150s;
+  }
+}
