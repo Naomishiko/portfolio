@@ -61,7 +61,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative xl:translate-x-[30%]">
           <div className="rounded-xl border-2 border-gold-500 bg-white p-3 shadow-[0_12px_28px_-12px_rgba(95,69,15,0.7)]">
             <img
               src={naomishiko}
