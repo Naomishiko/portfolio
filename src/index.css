@@ -281,10 +281,37 @@
   filter: drop-shadow(0 14px 34px rgba(95, 69, 15, 0.14));
 }
 
-/* ---- Portfolio "work" cards (template-inspired, gold/pink) ---- */
-.work-card {
+/* ---- Portfolio sliding showcase (slides sideways, like Experience) ---- */
+.work-scene {
+  width: 100%;
+  overflow: hidden;
+  padding: 0.5rem 0 1rem;
+  -webkit-mask: linear-gradient(90deg, #0000, #000 10% 90%, #0000);
+  mask: linear-gradient(90deg, #0000, #000 10% 90%, #0000);
+}
+
+.work-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: work-slide 26s linear infinite;
+}
+
+.work-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes work-slide {
+  to {
+    transform: translateX(calc(-50% - 1rem));
+  }
+}
+
+.work-slide {
   position: relative;
   display: block;
+  flex: 0 0 auto;
+  width: clamp(15rem, 32vw, 19rem);
   overflow: hidden;
   border-radius: 1.25rem;
   background: rgba(255, 255, 255, 0.72);
@@ -294,7 +321,7 @@
   transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
-.work-card::after {
+.work-slide::after {
   content: "";
   position: absolute;
   inset: -1px;
@@ -309,86 +336,62 @@
   pointer-events: none;
 }
 
-.work-card:hover,
-.work-card:focus-visible {
+.work-slide:hover,
+.work-slide:focus-visible {
   transform: translateY(-6px);
   border-color: transparent;
   box-shadow: 0 28px 60px -24px rgba(212, 175, 55, 0.65);
 }
 
-.work-card:hover::after,
-.work-card:focus-visible::after {
+.work-slide:hover::after,
+.work-slide:focus-visible::after {
   opacity: 1;
 }
 
-.work-card__media {
+.work-slide__media {
   position: relative;
   overflow: hidden;
 }
 
-.work-card__media::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(180deg, transparent 55%, rgba(48, 31, 10, 0.32));
-  transition: opacity 0.35s ease;
-}
-
-.work-card__media img {
+.work-slide__media img {
   display: block;
   width: 100%;
-  height: 14rem;
+  height: 12rem;
   object-fit: cover;
-  -webkit-mask-image: radial-gradient(ellipse 82% 92% at 50% 45%, #000 62%, transparent 100%);
-  mask-image: radial-gradient(ellipse 82% 92% at 50% 45%, #000 62%, transparent 100%);
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.work-card:hover .work-card__media img {
+.work-slide:hover .work-slide__media img,
+.work-slide:focus-visible .work-slide__media img {
   transform: scale(1.08);
 }
 
-.work-card__cta {
-  position: absolute;
-  z-index: 2;
-  right: 0.85rem;
-  bottom: 0.85rem;
+.work-slide__body {
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.work-slide__cta {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  margin-top: 0.7rem;
   border-radius: 9999px;
-  padding: 0.4rem 0.9rem;
-  font-size: 0.7rem;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #3a2708;
   background: linear-gradient(135deg, #fff0b8, #f0b95c);
-  box-shadow: 0 6px 16px rgba(95, 69, 15, 0.4);
-  transform: translateY(8px);
-  opacity: 0;
-  transition: transform 0.35s ease, opacity 0.35s ease;
-}
-
-.work-card:hover .work-card__cta,
-.work-card:focus-visible .work-card__cta {
-  transform: translateY(0);
-  opacity: 1;
+  box-shadow: 0 6px 16px rgba(95, 69, 15, 0.35);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .work-card,
-  .work-card__media img,
-  .work-card__cta {
-    transition: none;
+  .work-track {
+    animation-duration: 120s;
   }
-}
-
-/* Touch devices have no hover, so keep the button visible */
-@media (hover: none) {
-  .work-card__cta {
-    transform: none;
-    opacity: 1;
+  .work-slide,
+  .work-slide__media img {
+    transition: none;
   }
 }
