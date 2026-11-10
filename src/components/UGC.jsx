@@ -16,7 +16,7 @@ const VideoCard = ({ src, poster, title, desc }) => {
   return (
     <div className="w-full overflow-hidden rounded-2xl border border-gold-400/50 bg-gradient-to-b from-gold-100/60 to-white/70 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:border-gold-400 hover:shadow-gold">
       {failed ? (
-        <div className="flex aspect-[9/16] w-full items-center justify-center bg-gradient-to-b from-gold-100/70 to-white/70 px-6 text-center font-sans text-sm font-light text-ink/50">
+        <div className="flex aspect-[9/16] w-full items-center justify-center bg-gradient-to-b from-gold-100/70 to-white/70 px-6 text-center font-sans text-sm font-light text-ink/75">
           Video coming soon
         </div>
       ) : (
@@ -35,7 +35,7 @@ const VideoCard = ({ src, poster, title, desc }) => {
       )}
       <div className="px-5 py-4">
         <p className="font-serif text-xl text-ink">{title}</p>
-        <p className="font-sans text-sm font-light text-ink/60">{desc}</p>
+        <p className="font-sans text-sm font-light text-ink/85">{desc}</p>
       </div>
     </div>
   );
@@ -43,14 +43,14 @@ const VideoCard = ({ src, poster, title, desc }) => {
 
 const UGC = () => {
   return (
-    <div name="ugc" className="w-full bg-transparent py-12 md:py-24">
+    <div name="ugc" className="w-full bg-transparent py-10 md:py-16">
       <div className="mx-auto flex max-w-screen-lg flex-col px-6">
         <div className="mb-12 text-center md:text-left">
           <p className="font-serif text-4xl font-light text-black sm:text-5xl md:text-6xl">
             UGC
           </p>
           <div className="accent-rule mx-auto mt-4 h-px w-40 md:mx-0" />
-          <p className="mt-6 font-sans font-light text-ink/70">
+          <p className="mt-6 font-sans font-light text-ink/95">
             Skincare, makeup &amp; lifestyle content I&apos;ve made
           </p>
         </div>

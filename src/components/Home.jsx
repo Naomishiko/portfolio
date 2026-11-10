@@ -47,7 +47,7 @@ const Home = () => {
         <div className="flex flex-col justify-center text-center md:text-left">
           <h2 className="sr-only">Hello, I&apos;m Naomi</h2>
           <TextRing />
-          <p className="mt-6 max-w-md font-sans text-lg font-light text-ink/70">
+          <p className="mt-6 max-w-md font-sans text-lg font-light text-ink/95">
             Design, code, and a little sparkle.
           </p>
 

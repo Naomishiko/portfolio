@@ -1,18 +1,18 @@
 import React from "react";
 
 const fieldClass =
-  "rounded-lg border border-gold-400/50 bg-white/70 p-3 text-ink placeholder-ink/40 transition-colors duration-200 focus:border-gold-400 focus:outline-none";
+  "rounded-xl border-2 border-gold-500 bg-white p-4 text-ink shadow-[0_12px_28px_-12px_rgba(95,69,15,0.7)] placeholder-ink/55 transition-all duration-200 focus:border-gold-600 focus:ring-2 focus:ring-gold-300 focus:outline-none";
 
 const Contact = () => {
   return (
-    <div name="contact" className="w-full bg-transparent py-12 md:py-24">
-      <div className="mx-auto flex max-w-screen-sm flex-col px-6">
+    <div name="contact" className="w-full bg-transparent py-10 md:py-16">
+      <div className="mx-auto flex w-full max-w-screen-md flex-col px-6">
         <div className="mb-10 text-center">
           <p className="font-serif text-4xl font-light text-black sm:text-5xl md:text-6xl">
             Contact
           </p>
           <div className="accent-rule mx-auto mt-4 h-px w-40" />
-          <p className="mt-6 font-sans font-light text-ink/70">
+          <p className="mt-6 font-sans font-light text-ink/95">
             Have a project or just want to say hi?
           </p>
         </div>
@@ -32,7 +32,7 @@ const Contact = () => {
             type="email"
             name="email"
             placeholder="Enter your email"
-            className={`my-4 ${fieldClass}`}
+            className={`my-5 ${fieldClass}`}
           />
           <textarea
             name="message"

@@ -12,7 +12,7 @@
 
   body {
     background-color: #f7f3ea;
-    color: #5b1b3a;
+    color: #3a0e22;
   }
 
   /* Glossy white wallpaper with soft pearl sheen streaks */
@@ -108,7 +108,7 @@
   display: grid;
   overflow: hidden;
   width: 100%;
-  height: clamp(420px, 64vw, 700px);
+  height: clamp(360px, 54vw, 580px);
   perspective: 58em;
   -webkit-mask: linear-gradient(90deg, #0000, #000 18% 82%, #0000);
   mask: linear-gradient(90deg, #0000, #000 18% 82%, #0000);
@@ -188,9 +188,9 @@
   position: relative;
   z-index: 2;
   display: block;
-  padding: 1.05em 2.6em;
+  padding: 1.16em 2.86em;
   font-family: 'Merriweather', Georgia, serif;
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -398,7 +398,7 @@
 
 /* ---- 3D rotating text ring ("HELLO, I'M NAOMI", after jkantner) ---- */
 .text-ring {
-  --ring-r: clamp(4.5rem, 13vw, 7rem);
+  --ring-r: clamp(6rem, 18vw, 10rem);
   --ring-step: 12deg;
   --ring-size: calc(var(--ring-r) * 2.4);
   display: flex;
@@ -418,7 +418,7 @@
   transform-style: preserve-3d;
   width: 1.3em;
   height: 2.6em;
-  font-size: clamp(1.25rem, 3.4vw, 2rem);
+  font-size: clamp(1.7rem, 4.6vw, 2.8rem);
   animation: ring-spin 4.5s linear infinite;
 }
 
@@ -432,12 +432,13 @@
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #e0b84a;
+  font-weight: 800;
+  color: #f2c94c;
   text-shadow:
-    0 0 6px rgba(255, 224, 150, 0.85),
-    0 0 16px rgba(212, 175, 55, 0.7),
-    0 0 30px rgba(212, 175, 55, 0.4);
+    0 0 4px rgba(255, 240, 190, 0.95),
+    0 0 10px rgba(255, 214, 120, 0.9),
+    0 0 22px rgba(224, 179, 60, 0.85),
+    0 0 40px rgba(198, 152, 40, 0.6);
   transform: rotateY(calc(var(--i) * var(--ring-step))) translateZ(var(--ring-r));
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;

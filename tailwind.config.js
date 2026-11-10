@@ -50,7 +50,7 @@ module.exports = {
           600: "#9B5560",
           700: "#7B3F49",
         },
-        ink: "#1C0710",
+        ink: "#0A0206",
         espresso: "#2E0B1A",
         crimson: "#4A0F26",
       },

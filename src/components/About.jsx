@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full bg-transparent py-12 md:py-24"
+      className="w-full bg-transparent py-10 md:py-16"
     >
       <div className="mx-auto flex max-w-screen-lg flex-col px-6">
         <div className="mb-10 text-center md:text-left">
@@ -13,7 +13,7 @@ const About = () => {
           </p>
           <div className="accent-rule mx-auto mt-4 h-px w-40 md:mx-0" />
         </div>
-        <div className="mx-auto max-w-3xl space-y-6 text-center font-serif text-[12.59px] leading-relaxed text-ink/80 sm:text-[15.08px] md:text-[17.65px] md:leading-relaxed">
+        <div className="mx-auto max-w-3xl space-y-6 text-center font-serif text-[12.59px] leading-relaxed text-ink/95 sm:text-[15.08px] md:text-[17.65px] md:leading-relaxed">
           <p>
             Hi, I&apos;m Naomi, a creative developer and designer.
           </p>
