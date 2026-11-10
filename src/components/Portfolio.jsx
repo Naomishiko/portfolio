@@ -40,13 +40,16 @@ const Portfolio = () => {
                 href={url}
                 target="_blank"
                 rel="noreferrer"
-                className="group overflow-hidden rounded-2xl border border-gold-400/50 bg-white/70 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:border-gold-400 hover:shadow-gold"
+                className="work-card group"
               >
-                <img
-                  src={src}
-                  alt={title}
-                  className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                <div className="work-card__media">
+                  <span className="work-card__tag">Web Game</span>
+                  <img src={src} alt={title} />
+                  <span className="work-card__cta">
+                    Play
+                    <span aria-hidden="true">&rarr;</span>
+                  </span>
+                </div>
                 <div className="px-5 py-4">
                   <p className="font-serif text-xl text-ink">{title}</p>
                   <p className="font-sans text-sm font-light text-ink/60">{desc}</p>

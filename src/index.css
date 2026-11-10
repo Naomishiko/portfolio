@@ -348,3 +348,130 @@
   filter: brightness(1.06);
   box-shadow: 0 5px 12px rgba(95, 69, 15, 0.45), inset 0 0 0 1px rgba(95, 69, 15, 0.3);
 }
+
+/* ---- Portfolio "work" cards (template-inspired, gold/pink) ---- */
+.work-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  box-shadow: 0 18px 40px -22px rgba(95, 69, 15, 0.45);
+  backdrop-filter: blur(8px);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.work-card::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, #ffe195, #d4af37 40%, #ff9ec4 100%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.work-card:hover,
+.work-card:focus-visible {
+  transform: translateY(-6px);
+  border-color: transparent;
+  box-shadow: 0 28px 60px -24px rgba(212, 175, 55, 0.65);
+}
+
+.work-card:hover::after,
+.work-card:focus-visible::after {
+  opacity: 1;
+}
+
+.work-card__media {
+  position: relative;
+  overflow: hidden;
+}
+
+.work-card__media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, transparent 45%, rgba(48, 31, 10, 0.55));
+  opacity: 0.85;
+  transition: opacity 0.35s ease;
+}
+
+.work-card__media img {
+  display: block;
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.work-card:hover .work-card__media img {
+  transform: scale(1.08);
+}
+
+.work-card__tag {
+  position: absolute;
+  z-index: 2;
+  top: 0.85rem;
+  left: 0.85rem;
+  border-radius: 9999px;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #3a2708;
+  background: linear-gradient(135deg, #ffe195, #d4af37);
+  box-shadow: 0 4px 12px rgba(95, 69, 15, 0.35);
+}
+
+.work-card__cta {
+  position: absolute;
+  z-index: 2;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 9999px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #3a2708;
+  background: linear-gradient(135deg, #fff0b8, #f0b95c);
+  box-shadow: 0 6px 16px rgba(95, 69, 15, 0.4);
+  transform: translateY(8px);
+  opacity: 0;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.work-card:hover .work-card__cta,
+.work-card:focus-visible .work-card__cta {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-card,
+  .work-card__media img,
+  .work-card__cta {
+    transition: none;
+  }
+}
+
+/* Touch devices have no hover, so keep the button visible */
+@media (hover: none) {
+  .work-card__cta {
+    transform: none;
+    opacity: 1;
+  }
+}
