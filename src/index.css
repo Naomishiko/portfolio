@@ -451,9 +451,9 @@
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 800;
-  color: #0A0206;
-  text-shadow: none;
+  font-weight: 900;
+  color: #000000;
+  text-shadow: 0 0 0.6px #000;
   transform: rotateY(calc(var(--i) * var(--ring-step))) translateZ(var(--ring-r));
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
