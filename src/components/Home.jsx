@@ -62,11 +62,11 @@ const Home = () => {
         </div>
 
         <div className="relative xl:translate-x-[30%]">
-          <div className="rounded-xl border-2 border-gold-500 bg-white p-3 shadow-[0_12px_28px_-12px_rgba(95,69,15,0.7)]">
+          <div className="rounded-full border-2 border-gold-500 bg-white p-3 shadow-[0_12px_28px_-12px_rgba(95,69,15,0.7)]">
             <img
               src={naomishiko}
               alt="Naomi"
-              className="w-72 rounded-lg sm:w-[22rem] md:w-[28rem]"
+              className="aspect-square w-72 rounded-full object-cover object-top sm:w-[22rem] md:w-[28rem]"
             />
           </div>
         </div>
