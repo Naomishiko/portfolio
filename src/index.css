@@ -437,7 +437,7 @@
   transform-style: preserve-3d;
   width: 1.3em;
   height: 2.6em;
-  font-size: clamp(1.9rem, 5vw, 3.05rem);
+  font-size: clamp(1.8rem, 4.75vw, 2.9rem);
   animation: ring-spin 4.5s linear infinite;
 }
 
