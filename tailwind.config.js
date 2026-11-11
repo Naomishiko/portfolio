@@ -55,7 +55,7 @@ module.exports = {
         crimson: "#4A0F26",
       },
       fontFamily: {
-        signature: ["'Great Vibes'", "cursive"],
+        signature: ["'Noto Sans Math'", "'Great Vibes'", "cursive"],
         serif: ["'Merriweather'", "Georgia", "serif"],
         sans: ["'Merriweather'", "Georgia", "serif"],
       },
