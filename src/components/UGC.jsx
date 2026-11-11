@@ -14,9 +14,9 @@ const VideoCard = ({ src, poster, title, desc }) => {
   const [failed, setFailed] = useState(false);
 
   return (
-    <div className="w-full max-w-[260px] overflow-hidden rounded-2xl border border-gold-400/50 bg-gradient-to-b from-gold-100/60 to-white/70 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:border-gold-400 hover:shadow-gold">
+    <div className="w-full max-w-[260px] overflow-hidden rounded-[0.9rem] border-2 border-gold-500 bg-white shadow-[0_12px_28px_-12px_rgba(95,69,15,0.7)] transition-all duration-300 hover:-translate-y-1.5 hover:border-gold-500 hover:shadow-[0_20px_44px_-18px_rgba(95,69,15,0.75)]">
       {failed ? (
-        <div className="flex aspect-[9/16] w-full items-center justify-center bg-gradient-to-b from-gold-100/70 to-white/70 px-6 text-center font-sans text-sm font-light text-ink/75">
+        <div className="flex aspect-[9/16] w-full items-center justify-center bg-white px-6 text-center font-sans text-sm font-light text-ink/75">
           Video coming soon
         </div>
       ) : (
