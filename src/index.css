@@ -142,8 +142,9 @@
   place-items: center;
   gap: 0.4em;
   padding: 0.6em;
-  border-radius: 1.3em;
-  border: 1px solid;
+  border-radius: 0.9rem;
+  border: 2px solid #c09a2c;
+  background: #ffffff;
   text-align: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;

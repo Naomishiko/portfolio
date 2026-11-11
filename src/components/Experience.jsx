@@ -49,11 +49,7 @@ const Experience = () => {
               <div
                 key={id}
                 className="tech-card shadow-soft"
-                style={{
-                  "--i": i,
-                  borderColor: `${color}66`,
-                  backgroundImage: `linear-gradient(180deg, ${color}26, rgba(250, 245, 236, 0.92))`,
-                }}
+                style={{ "--i": i }}
               >
                 <Icon
                   size={72}
