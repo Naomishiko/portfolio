@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "./static/css/main.23ced262.css",
+    "main.js": "./static/js/main.e32b89d9.js",
+    "static/media/naomishiko.png": "./static/media/naomishiko.36d21545cb6c92ff2d62.png",
+    "static/media/glitter.png": "./static/media/glitter.ad0f5b235ca0db4da7fb.png",
+    "static/media/lebronjamesTrivia.jpg": "./static/media/lebronjamesTrivia.36a3a2dbd785be9d7c9a.jpg",
+    "static/media/tictac.jpg": "./static/media/tictac.dc33886d7d26039bb28d.jpg",
+    "static/media/fabric.svg": "./static/media/fabric.2b6ba5cc70d165a0299c.svg",
+    "index.html": "./index.html",
+    "main.23ced262.css.map": "./static/css/main.23ced262.css.map",
+    "main.e32b89d9.js.map": "./static/js/main.e32b89d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23ced262.css",
+    "static/js/main.e32b89d9.js"
+  ]
+}
