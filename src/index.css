@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+Math&family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -478,7 +478,7 @@
   opacity: 0.95;
 }
 
-.text-ring__sector:empty:nth-child(even)::before {
+.text-ring__sector:empty:nth-child(odd)::before {
   content: "</>";
 }
 
