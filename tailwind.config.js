@@ -55,7 +55,7 @@ module.exports = {
         crimson: "#4A0F26",
       },
       fontFamily: {
-        signature: ["'Merriweather'", "Georgia", "serif"],
+        signature: ["'Great Vibes'", "cursive"],
         serif: ["'Merriweather'", "Georgia", "serif"],
         sans: ["'Merriweather'", "Georgia", "serif"],
       },

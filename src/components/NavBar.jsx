@@ -17,7 +17,7 @@ const NavBar = () => {
   return (
     <div className="fixed z-50 flex h-20 w-full items-center justify-between border-b border-gold-400/40 bg-white/60 px-6 text-ink/95 backdrop-blur">
       <h1 className="font-signature text-4xl leading-none text-gold-500 sm:text-5xl">
-        N°1
+        Naomi
       </h1>
 
       <ul className="hidden items-center gap-3 md:flex">
