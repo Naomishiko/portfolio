@@ -16,8 +16,8 @@ const NavBar = () => {
 
   return (
     <div className="fixed z-50 flex h-20 w-full items-center justify-between border-b border-gold-400/40 bg-white/60 px-6 text-ink/95 backdrop-blur">
-      <h1 className="font-mono text-2xl font-bold leading-none text-gold-500 sm:text-3xl">
-        {"<div>N</div>"}
+      <h1 className="gold-shine-btn nav-logo-btn">
+        <span>{"<div>N</div>"}</span>
       </h1>
 
       <ul className="hidden items-center gap-3 md:flex">
