@@ -478,7 +478,7 @@
   opacity: 0.95;
 }
 
-.text-ring__sector:empty:nth-child(odd)::before {
+.text-ring__sector:empty:nth-child(even)::before {
   content: "</>";
 }
 
