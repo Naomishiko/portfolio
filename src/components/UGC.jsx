@@ -43,11 +43,11 @@ const VideoCard = ({ src, poster, title, desc }) => {
 
 const UGC = () => {
   return (
-    <div name="ugc" className="w-full bg-transparent py-10 md:py-16">
+    <div name="logos" className="w-full bg-transparent py-10 md:py-16">
       <div className="mx-auto flex max-w-screen-2xl flex-col px-6 md:px-10">
         <div className="mb-12 text-center">
           <p className="font-serif text-4xl font-light text-black sm:text-5xl md:text-6xl">
-            UGC
+            Logos
           </p>
           <div className="accent-rule mx-auto mt-4 h-px w-40" />
           <p className="mt-6 font-sans font-light text-ink/95">

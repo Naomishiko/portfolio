@@ -51,12 +51,12 @@ const Home = () => {
 
           <div className="home-cta">
             <Link
-              to="portfolio"
+              to="website"
               smooth
               duration={500}
               className="gold-shine-btn cursor-pointer"
             >
-              <span>View Portfolio</span>
+              <span>View Website</span>
             </Link>
           </div>
         </div>
