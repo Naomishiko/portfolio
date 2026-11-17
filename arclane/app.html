@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ARCLANE — Recovery dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app-head">
+  <div class="wrap app-head__inner">
+    <a class="wordmark" href="index.html">ARCLANE<span>.</span></a>
+    <div class="app-head__actions">
+      <button class="btn btn--sm" id="reset">Reset Demo</button>
+      <a class="btn btn--sm btn--solid" href="index.html">← Back To Site</a>
+    </div>
+  </div>
+</div>
+
+<main class="wrap app-body">
+  <div class="banner" id="banner" hidden>
+    <span id="bannerText"></span>
+    <button class="btn btn--sm" id="bannerBtn"></button>
+  </div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="toolbar">
+    <div class="tabs" id="tabs">
+      <button class="tab is-active" data-filter="all">All</button>
+      <button class="tab" data-filter="neglected">Neglected</button>
+      <button class="tab" data-filter="new">New</button>
+      <button class="tab" data-filter="contacted">Contacted</button>
+      <button class="tab" data-filter="quoted">Quoted</button>
+      <button class="tab" data-filter="won">Won</button>
+      <button class="tab" data-filter="lost">Lost</button>
+    </div>
+    <input class="search" id="search" placeholder="SEARCH NAME, COMPANY OR SERVICE" />
+  </div>
+
+  <div class="table" id="table"></div>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

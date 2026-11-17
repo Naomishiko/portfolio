@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Duespy — The Subscription Detective</title>
+<meta name="description" content="Duespy traces every recurring charge on your accounts, shows what's coming next, and tells you what to cut. Stop paying for things you forgot you bought." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23c8ff2e' stroke='%2314140f' stroke-width='2'/%3E%3Ccircle cx='14' cy='14' r='6' fill='none' stroke='%2314140f' stroke-width='2.6'/%3E%3Cpath d='M18.5 18.5l6 6' stroke='%2314140f' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Space+Mono:wght@400;700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=24" />
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ───────────────────────────── NAV ───────────────────────────── -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Duespy home">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32"><circle cx="14" cy="14" r="7.5" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M19.5 19.5l7 7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+    </span>
+    <span class="brand-name">Due<em>spy</em></span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#board">The case board</a>
+    <a href="#method">Method</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="#board">See the evidence</a>
+    <a class="btn btn-solid" href="#pricing">Start the search<span class="dot"></span></a>
+  </div>
+  <button class="nav-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main id="top">
+
+  <!-- ───────────────────────────── HERO ───────────────────────────── -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1 class="reveal" data-delay="1">
+          Every subscription<br/>leaves a <span class="hl">trail.</span>
+        </h1>
+
+        <p class="lede reveal" data-delay="2">
+          Somewhere in your statements, a dozen small charges renew every month — quietly,
+          patiently, forever. Duespy reads the trail, names every subscription you own,
+          shows you exactly what's coming, and tells you which ones are worth keeping.
+        </p>
+
+        <div class="hero-actions reveal" data-delay="3">
+          <a class="btn btn-solid btn-lg" href="#board">Investigate my charges<span class="dot"></span></a>
+          <a class="btn btn-ghost btn-lg" href="#method">How it works</a>
+        </div>
+
+        <div class="hero-proof reveal" data-delay="4">
+          <div class="proof-avs" aria-hidden="true">
+            <span style="--a:#c8ff2e"></span><span style="--a:#17c98a"></span>
+            <span style="--a:#ff5a3c"></span><span style="--a:#7a4dff"></span>
+          </div>
+          <p><b>38,400</b> subscribers traced · average <b>$276/yr</b> recovered in the first month</p>
+        </div>
+      </div>
+
+      <!-- Statement scanner -->
+      <div class="hero-scan reveal" data-delay="2">
+        <div class="dossier">
+          <div class="dossier-head">
+            <div>
+              <p class="dossier-kicker">Exhibit A</p>
+              <h3>Checking ···4417 — last 32 days</h3>
+            </div>
+            <div class="dossier-status"><span class="pulse"></span> scan complete</div>
+          </div>
+
+          <ul class="txn-list" id="txnList" aria-label="Anonymised transaction feed">
+            <!-- rows injected by app.js -->
+          </ul>
+
+          <div class="dossier-foot">
+            <div class="dossier-count">
+              <span class="num" id="txnRecurring">0</span>
+              <span class="lbl">recurring<br/>patterns found</span>
+            </div>
+            <div class="dossier-note" id="txnNote">Reading merchant strings…</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>NETFLIX · $15.49/mo — 14 months since you last finished a series</span><i>◆</i>
+        <span>ADOBE CC · $59.99/mo — price rose 8% in March</span><i>◆</i>
+        <span>iCLOUD+ 2TB · $9.99/mo — duplicated by Google One</span><i>◆</i>
+        <span>PELOTON APP · $12.99/mo — bike sold in June</span><i>◆</i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── THE CASE BOARD ───────────────────────────── -->
+  <section class="board-section" id="board">
+    <div class="section-head">
+      <p class="eyebrow reveal">The case board</p>
+      <h2 class="reveal" data-delay="1">Your subscriptions, pinned<br/>to the wall.</h2>
+      <p class="section-sub reveal" data-delay="2">
+        This is the live dashboard. Every number below is real logic running in your browser —
+        sort it, triage it, watch your totals move.
+      </p>
+    </div>
+
+    <div class="board-shell reveal" data-delay="2">
+      <!-- KPI strip -->
+      <div class="kpi-strip">
+        <div class="kpi">
+          <p class="kpi-lbl">Recurring / month</p>
+          <p class="kpi-val" data-count="187.41" data-prefix="$">$0</p>
+          <p class="kpi-meta" id="kpiCount">— active subscriptions</p>
+        </div>
+        <div class="kpi">
+          <p class="kpi-lbl">Recurring / year</p>
+          <p class="kpi-val" data-count="2248.92" data-prefix="$">$0</p>
+          <p class="kpi-meta">if nothing changes</p>
+        </div>
+        <div class="kpi">
+          <p class="kpi-lbl">Charges next 30 days</p>
+          <p class="kpi-val" id="kpiUpcoming">$0</p>
+          <p class="kpi-meta" id="kpiUpcomingMeta">— charges landing</p>
+        </div>
+        <div class="kpi kpi-accent">
+          <p class="kpi-lbl">Recoverable / year</p>
+          <p class="kpi-val" id="kpiSave">$0</p>
+          <p class="kpi-meta" id="kpiSaveMeta">from flagged subscriptions</p>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="board-bar">
+        <div class="tabs" role="tablist" aria-label="Case board views">
+          <button class="tab is-active" role="tab" aria-selected="true" data-tab="subs">Subscriptions</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="upcoming">Upcoming charges</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="creep">Price creep</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="advisor">Cancel advisor</button>
+        </div>
+        <div class="board-tools" id="boardTools">
+          <button class="btn btn-add" id="addSubBtn" aria-haspopup="dialog">
+            <span class="plus" aria-hidden="true">+</span> Add a subscription
+          </button>
+          <label class="switch">
+            <input type="checkbox" id="annualView" />
+            <span class="switch-track"><span class="switch-thumb"></span></span>
+            <span class="switch-lbl">Show annual cost</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Panel: subscriptions -->
+      <div class="panel is-active" data-panel="subs">
+        <div class="filters" role="group" aria-label="Filter subscriptions">
+          <button class="chip is-active" data-filter="all">All <b id="cAll">0</b></button>
+          <button class="chip" data-filter="review">Needs review <b id="cReview">0</b></button>
+          <button class="chip" data-filter="cancel">Cancel candidates <b id="cCancel">0</b></button>
+          <button class="chip" data-filter="duplicate">Duplicated <b id="cDup">0</b></button>
+        </div>
+        <div class="sub-grid" id="subGrid"><!-- injected --></div>
+        <p class="empty-note" id="subEmpty" hidden>No subscriptions match that filter. The trail is clean here.</p>
+      </div>
+
+      <!-- Panel: upcoming -->
+      <div class="panel" data-panel="upcoming">
+        <div class="upcoming-wrap">
+          <div class="cal-strip">
+            <div class="cal-head">
+              <h3>Next 45 days</h3>
+              <p>Each pin is a charge. The taller the pin, the bigger the hit.</p>
+            </div>
+            <div class="cal-rail" id="calRail"><!-- injected --></div>
+            <div class="cal-detail" id="calDetail" aria-live="polite"><!-- injected --></div>
+          </div>
+          <aside class="cal-side">
+            <h4 class="side-title">Biggest hit this cycle</h4>
+            <div class="side-big" id="sideBig"><!-- injected --></div>
+            <h4 class="side-title">Next 7 days</h4>
+            <ul class="side-list" id="sideSoon"><!-- injected --></ul>
+          </aside>
+        </div>
+      </div>
+
+      <!-- Panel: creep -->
+      <div class="panel" data-panel="creep">
+        <div class="creep-head">
+          <div>
+            <h3>Silent price increases</h3>
+            <p>Prices that climbed while you weren't looking. Bars show each subscription's cost at sign-up vs today.</p>
+          </div>
+          <div class="creep-stat">
+            <span class="num" id="creepTotal">$0</span>
+            <span class="lbl">added per month by increases alone</span>
+          </div>
+        </div>
+        <div class="creep-list" id="creepList"><!-- injected --></div>
+      </div>
+
+      <!-- Panel: advisor -->
+      <div class="panel" data-panel="advisor">
+        <div class="advisor-head">
+          <div>
+            <h3>What should you actually cancel?</h3>
+            <p>Worst first. Services you barely use come top, then ones worth a second look, then what to keep. Price breaks ties.</p>
+          </div>
+          <div class="advisor-summary" id="advisorSummary"><!-- injected --></div>
+        </div>
+        <ol class="advisor-list" id="advisorList"><!-- injected --></ol>
+      </div>
+
+      <div class="board-foot">
+        <p><span class="mono">NOTE</span> This demo runs entirely offline with sample data. Live bank connections are coming soon.</p>
+        <button class="btn btn-ghost" id="resetBoard">Reset the case</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add-subscription dialog -->
+  <div class="modal-scrim" id="addScrim" hidden></div>
+  <div class="modal" id="addModal" role="dialog" aria-modal="true" aria-labelledby="addTitle" hidden>
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="addTitle">Add a subscription</h3>
+        <button class="modal-x" id="addClose" aria-label="Close">&times;</button>
+      </div>
+      <p class="modal-sub">Banks miss things. Add anything the search didn't catch and it joins the board.</p>
+      <form id="addForm" novalidate>
+        <div class="field">
+          <label for="fName">Service name</label>
+          <input type="text" id="fName" name="name" maxlength="40" placeholder="e.g. Amazon Prime" autocomplete="off" required />
+          <p class="field-err" id="errName" hidden>Give it a name.</p>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="fPrice">Amount</label>
+            <input type="number" id="fPrice" name="price" min="0.01" max="100000" step="0.01" inputmode="decimal" placeholder="9.99" required />
+            <p class="field-err" id="errPrice" hidden>Enter an amount above zero.</p>
+          </div>
+          <div class="field">
+            <label for="fCycle">Billing</label>
+            <select id="fCycle" name="cycle">
+              <option value="monthly">Monthly</option>
+              <option value="annual">Yearly</option>
+              <option value="quarterly">Quarterly</option>
+              <option value="weekly">Weekly</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="fCat">Category</label>
+            <select id="fCat" name="cat">
+              <option>Streaming</option>
+              <option>Music</option>
+              <option>Creative</option>
+              <option>Cloud storage</option>
+              <option>News</option>
+              <option>Shopping</option>
+              <option>Productivity</option>
+              <option>Fitness</option>
+              <option>Audio</option>
+              <option>Gaming</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fDay">Next charge date</label>
+            <input type="date" id="fDay" name="day" required />
+            <p class="field-err" id="errDay" hidden>Pick the next charge date.</p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="fUse">How much do you use it?</label>
+          <select id="fUse" name="usage">
+            <option value="moderate">Sometimes</option>
+            <option value="heavy">Most days</option>
+            <option value="light">Rarely</option>
+            <option value="none">Barely, if ever</option>
+          </select>
+        </div>
+        <div class="modal-foot">
+          <button type="button" class="btn btn-ghost" id="addCancel">Cancel</button>
+          <button type="submit" class="btn btn-solid" id="addSave">Add to the board</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ───────────────────────────── METHOD ───────────────────────────── -->
+  <section class="method" id="method">
+    <div class="section-head">
+      <p class="eyebrow reveal">The method</p>
+      <h2 class="reveal" data-delay="1">Three moves, no spreadsheets.</h2>
+    </div>
+    <div class="method-grid">
+      <article class="method-card reveal">
+        <span class="method-num">01</span>
+        <h3>Trace</h3>
+        <p>We read the last 24 months of transactions from your bank or card — read-only. Merchant strings like <span class="mono">SQ *SPOTIFYUSA</span> and <span class="mono">ADOBE 888-…</span> are matched against 40,000 known billers, then grouped into a single subscription with its true cadence.</p>
+        <ul class="method-list">
+          <li>Monthly, annual, quarterly and weekly cycles</li>
+          <li>Price-change history per biller</li>
+          <li>Free-trial → paid conversions flagged early</li>
+        </ul>
+      </article>
+      <article class="method-card reveal" data-delay="1">
+        <span class="method-num">02</span>
+        <h3>Forecast</h3>
+        <p>Every subscription is projected forward, so you see the money before it leaves. A charge that lands on the 3rd and the 28th is two different decisions — we show both, plus the annual total that sneaks up on you.</p>
+        <ul class="method-list">
+          <li>45-day charge calendar</li>
+          <li>Annualised cost of each service</li>
+          <li>Alerts 3 days before a renewal</li>
+        </ul>
+      </article>
+      <article class="method-card reveal" data-delay="2">
+        <span class="method-num">03</span>
+        <h3>Decide</h3>
+        <p>Usage signals, price creep and duplicates become a plain-English verdict: keep it, review it, or cut it. One tap files the cancellation, and we confirm when the charges actually stop.</p>
+        <ul class="method-list">
+          <li>Cancel-links for 900+ services</li>
+          <li>Downgrade paths before full cancellation</li>
+          <li>We verify the charge stopped</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── EVIDENCE BOARD ───────────────────────────── -->
+  <section class="evidence">
+    <div class="section-head">
+      <p class="eyebrow reveal">Evidence board</p>
+      <h2 class="reveal" data-delay="1">Built for one job: making recurring<br/>money make sense.</h2>
+    </div>
+    <div class="evidence-grid">
+      <article class="ev-card ev-wide reveal">
+        <div class="ev-tag">EXHIBIT B</div>
+        <h3>Detection that survives messy merchant data</h3>
+        <p>Bank feeds are ugly: <span class="mono">AMZN Mktp US*2H4L9</span>, <span class="mono">PAYPAL *STEAM</span>, processor prefixes, location codes. Our matcher normalises all of it, then uses amount stability and date rhythm to confirm a subscription rather than guess one.</p>
+        <div class="ev-mock" aria-hidden="true">
+          <span class="mock-pill">SQ *SPOTIFYUSA</span>
+          <span class="mock-arrow">→</span>
+          <span class="mock-pill mock-hit">Spotify Premium · $11.99/mo</span>
+        </div>
+      </article>
+      <article class="ev-card reveal" data-delay="1">
+        <div class="ev-tag">EXHIBIT C</div>
+        <h3>Renewal radar</h3>
+        <p>Three days before anything renews, you get one line: what it is, what it costs, and one tap to stop it. No dashboards to remember.</p>
+      </article>
+      <article class="ev-card reveal" data-delay="2">
+        <div class="ev-tag">EXHIBIT D</div>
+        <h3>Duplicate hunter</h3>
+        <p>Two cloud drives, three music services, four streaming tiers. We group overlapping services and show the overlap in dollars, not opinions.</p>
+      </article>
+      <article class="ev-card ev-accent reveal">
+        <div class="ev-tag">EXHIBIT E</div>
+        <h3>Household mode</h3>
+        <p>Share one case file with a partner. Anyone can tag a charge as “mine”, “theirs” or “ours”, so the split is never an argument again.</p>
+      </article>
+      <article class="ev-card reveal" data-delay="1">
+        <div class="ev-tag">EXHIBIT F</div>
+        <h3>Privacy by default</h3>
+        <p>Read-only access through licensed aggregators. We never see or store your bank credentials, and you can revoke the connection in one click.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── CASE NOTE ───────────────────────────── -->
+  <section class="casenote">
+    <blockquote class="reveal">
+      <p>“I found <span class="hl">eleven</span> subscriptions I'd forgotten I had. Nine of them were still charging me. Duespy didn't lecture me about budgeting — it just showed me the evidence.”</p>
+      <footer><span class="cn-av">MK</span> Maya K. — designer, 6 subscriptions cancelled in one sitting</footer>
+    </blockquote>
+  </section>
+
+  <!-- ───────────────────────────── PRICING ───────────────────────────── -->
+  <section class="pricing" id="pricing">
+    <div class="section-head">
+      <p class="eyebrow reveal">Terms of engagement</p>
+      <h2 class="reveal" data-delay="1">Costs less than the thing<br/>you forgot about.</h2>
+      <div class="billing-toggle reveal" data-delay="2" role="group" aria-label="Billing period">
+        <button class="bt-opt is-active" data-cycle="monthly">Monthly</button>
+        <button class="bt-opt" data-cycle="annual">Annual <span class="bt-badge">save 40%</span></button>
+      </div>
+    </div>
+
+    <div class="price-grid price-grid-2">
+      <article class="price-card price-card-hero reveal">
+        <div class="ribbon">Most cases closed</div>
+        <h3>Detective</h3>
+        <p class="price-desc">Everything, plus the decisions.</p>
+        <p class="price-amount"><span class="amt" data-monthly="6" data-annual="43">$6</span><span class="per" data-per>/month</span></p>
+        <ul class="price-features">
+          <li>Unlimited tracked services</li>
+          <li>Cancel advisor &amp; one-tap cancels</li>
+          <li>Price-creep &amp; duplicate alerts</li>
+          <li>Renewal reminders 3 days ahead</li>
+          <li>Household mode, up to 4 people</li>
+        </ul>
+        <a class="btn btn-solid btn-block" href="#pricing" data-plan="Detective">Start 14-day trial<span class="dot"></span></a>
+        <p class="price-fine">14 days free &middot; Card required &middot; Cancel anytime.</p>
+      </article>
+
+      <article class="price-card reveal" data-delay="1">
+        <h3>Precinct</h3>
+        <p class="price-desc">For shared money &amp; small teams.</p>
+        <p class="price-amount"><span class="amt" data-monthly="14" data-annual="99">$14</span><span class="per" data-per>/month</span></p>
+        <ul class="price-features">
+          <li>Everything in Detective</li>
+          <li>Unlimited household members</li>
+          <li>Multiple accounts &amp; cards</li>
+          <li>Exportable spend ledger (CSV)</li>
+          <li>Priority human support</li>
+        </ul>
+        <a class="btn btn-ghost btn-block" href="#pricing" data-plan="Precinct">Choose Precinct</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── FAQ ───────────────────────────── -->
+  <section class="faq" id="faq">
+    <div class="section-head">
+      <p class="eyebrow reveal">Cross-examination</p>
+      <h2 class="reveal" data-delay="1">Questions, answered plainly.</h2>
+    </div>
+    <div class="faq-list" id="faqList">
+      <details class="faq-item reveal">
+        <summary>How do you find subscriptions I've forgotten?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>We read the last 24 months of transactions from a connected bank or card account (read-only). Recurring charges are identified by merchant, cadence, amount stability and date rhythm. Anything that repeats on a schedule — monthly, quarterly, annual, weekly — is surfaced as a subscription with its full history.</p></div>
+      </details>
+      <details class="faq-item reveal" data-delay="1">
+        <summary>Do you need my bank password?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>Never. We connect through licensed open-banking aggregators, which means you authorise read-only access inside your own bank's interface. We never see, transmit or store your credentials, and you can revoke the connection at any time from the app or your bank.</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Can Duespy cancel subscriptions for me?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>For over 900 services we hold the direct cancellation link, and one tap files the request. For services that require a phone call or an email, we prepare the wording and track whether the charge actually stops. Either way, we verify the outcome against your statements.</p></div>
+      </details>
+      <details class="faq-item reveal" data-delay="1">
+        <summary>What if I genuinely use the subscription?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>Then keep it — that's the point. Duespy is not a tool for cancelling things. It's a tool for knowing what you own. Plenty of users keep everything and simply switch to the annual plan, or move to a cheaper tier, once they can see the real cost.</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Is my data sold or used for ads?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>No. Your data is not sold, rented or used for advertising, and we don't run ads. Our revenue comes only from subscriptions, which is exactly why the product has to be honest with you about what to cut.</p></div>
+      </details>
+      <details class="faq-item reveal" data-delay="1">
+        <summary>Which countries are supported?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>We currently support banks in the US, UK, Canada, Australia and the EU. Prices are shown in your local currency, and cancellation links are region-aware. More markets are being added each quarter.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── FINAL CTA ───────────────────────────── -->
+  <section class="finale" id="finale">
+    <div class="finale-card reveal">
+      <div class="finale-copy">
+        <p class="eyebrow">Open your case</p>
+        <h2>Find the money that's<br/>leaving on a schedule.</h2>
+        <p>Connect an account, see every recurring charge in under a minute, and get a plain-English verdict on what to keep.</p>
+        <form class="finale-form" id="finaleForm" novalidate>
+          <input type="email" name="email" id="finaleEmail" placeholder="you@email.com" aria-label="Email address" autocomplete="email" required />
+          <button class="btn btn-solid" type="submit">Start the search<span class="dot"></span></button>
+          <!-- Honeypot: real people never see or fill this. Bots do, and Formspree drops those. -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field" />
+        </form>
+        <p class="finale-status" id="finaleStatus" role="status" aria-live="polite"></p>
+      </div>
+      <div class="finale-art" aria-hidden="true">
+        <div class="stamp-seal">CASE<br/>CLOSED</div>
+        <div class="finale-rings"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ───────────────────────────── FOOTER ───────────────────────────── -->
+<footer class="site-foot">
+  <div class="foot-top">
+    <div class="foot-brand">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><circle cx="14" cy="14" r="7.5" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M19.5 19.5l7 7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-name">Due<em>spy</em></span>
+      </a>
+      <p>The subscription detective. Find the recurring charges, see what's coming, decide what to keep.</p>
+    </div>
+    <div class="foot-cols">
+      <div class="foot-col">
+        <h4>Product</h4>
+        <a href="#board">Case board</a>
+        <a href="#method">Method</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="#top">About</a>
+        <a href="#top">Careers</a>
+        <a href="#top">Press</a>
+        <a href="#top">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>Trust</h4>
+        <a href="#top">Privacy</a>
+        <a href="#top">Security</a>
+        <a href="#top">Terms</a>
+        <a href="#top">Data sources</a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <p>© 2026 Duespy Inc. Sample data shown throughout. Not financial advice.</p>
+    <p class="mono">MADE FOR PEOPLE WHO FORGET</p>
+  </div>
+</footer>
+
+<script src="app.js?v=24"></script>
+</body>
+</html>
