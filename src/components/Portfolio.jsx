@@ -1,6 +1,7 @@
 import React from "react";
 import lebronjamesTrivia from "../assets/portfolio/lebronjamesTrivia.jpg";
 import tictac from "../assets/portfolio/tictac.jpg";
+import duespy from "../assets/portfolio/duespy.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -15,8 +16,16 @@ const Portfolio = () => {
       id: 2,
       src: tictac,
       title: "Tic Tac Toe",
-      desc: "Trivia game",
+      desc: "Two-player tic tac toe",
       url: "https://naomishiko.github.io/tictac/",
+    },
+    {
+      id: 3,
+      src: duespy,
+      title: "Duespy",
+      desc: "Subscription tracking dashboard",
+      url: "https://naomishiko.github.io/duespy/",
+      cta: "Open",
     },
   ];
 
@@ -39,7 +48,7 @@ const Portfolio = () => {
 
         <div className="work-scene">
           <div className="work-track">
-            {slides.map(({ id, src, title, desc, url }, i) => (
+            {slides.map(({ id, src, title, desc, url, cta = "Play" }, i) => (
               <a
                 key={`${id}-${i}`}
                 href={url}
@@ -54,7 +63,7 @@ const Portfolio = () => {
                   <p className="font-serif text-xl text-ink">{title}</p>
                   <p className="font-sans text-sm font-light text-ink/85">{desc}</p>
                   <span className="work-slide__cta">
-                    Play
+                    {cta}
                     <span aria-hidden="true">&rarr;</span>
                   </span>
                 </div>
