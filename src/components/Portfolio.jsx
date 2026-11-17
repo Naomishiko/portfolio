@@ -24,7 +24,7 @@ const Portfolio = () => {
       src: duespy,
       title: "Duespy",
       desc: "Subscription tracking dashboard",
-      url: "https://naomishiko.github.io/duespy/",
+      url: "https://naomishiko.github.io/duespy/#top",
       cta: "Open",
     },
   ];
